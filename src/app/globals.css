@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Warm, welcoming base (stone-like) */
+  --background: #fafaf9; /* stone-50 */
+  --foreground: #1f2937; /* slate-800 */
+
+  /* Brand accents (used later by components) */
+  --accent-sage: #7fa68a; /* soft sage */
+  --accent-gold: #c9a24d; /* muted gold */
 }
 
 @theme inline {
@@ -12,12 +17,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
