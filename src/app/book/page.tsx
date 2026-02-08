@@ -20,7 +20,7 @@ export default function BookPage() {
 
 
         {/* BOOKING FORM */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32">
           <div className="max-w-3xl rounded-2xl bg-white p-8 shadow-sm ring-1 ring-black/5">
             <form className="grid gap-6 sm:grid-cols-2">
               <div>

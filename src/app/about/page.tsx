@@ -59,7 +59,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="mt-32 mb-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32 mb-32">
           <div className="rounded-3xl bg-white p-10 shadow-sm ring-1 ring-black/5 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold">We look forward to serving you</h3>
