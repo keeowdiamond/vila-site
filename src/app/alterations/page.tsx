@@ -1,5 +1,6 @@
 import Container from "../../components/Container";
 import Button from "../../components/Button";
+import Link from "next/link";
 
 export default function AlterationsPage() {
   return (
@@ -16,13 +17,17 @@ export default function AlterationsPage() {
               Our experienced tailors ensure a precise, comfortable fit.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button>Book Appointment</Button>
-              <Button variant="secondary">Call Now</Button>
+              <Link href="/book">
+                <Button>Request Appointment</Button>
+              </Link>
+              <a href="tel:6154625145">
+                <Button variant="secondary">Call Now</Button>
+              </a>
             </div>
           </div>
 
           {/* IMAGE PLACEHOLDER */}
-          <div className="h-64 md:h-80 rounded-2xl border bg-zinc-50 flex items-center justify-center text-zinc-400">
+          <div className="h-64 md:h-80 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 flex items-center justify-center text-zinc-400">
             Tailoring / Alterations Image
           </div>
         </section>
@@ -30,7 +35,7 @@ export default function AlterationsPage() {
         <div className="mt-20 border-t"></div>
 
         {/* SERVICES LIST */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">Our Alteration Services</h2>
           <p className="mt-3 text-zinc-600 max-w-3xl">
             From simple hemming to complex wedding dress alterations, we handle each garment with care
@@ -39,50 +44,19 @@ export default function AlterationsPage() {
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             {[
-              { name: "Wedding & Prom Dress Alterations", price: "Starting at $XX" },
-              { name: "Suit Tailoring", price: "Starting at $XX" },
-              { name: "Pants Hemming", price: "Starting at $XX" },
-              { name: "Garment Resizing", price: "Starting at $XX" },
-              { name: "Zipper Repairs", price: "Starting at $XX" },
-              { name: "Custom Adjustments", price: "Pricing varies" },
+              { name: "Wedding & Prom Dress Alterations", note: "In-store fitting and inspection" },
+              { name: "Suit Tailoring", note: "Professional tailoring for a clean fit" },
+              { name: "Pants Hemming", note: "Common service — quick turnaround" },
+              { name: "Garment Resizing", note: "Complex items may vary" },
+              { name: "Zipper Repairs", note: "Repairs for pants, jeans, coats, and dresses" },
+              { name: "Custom Adjustments", note: "Unique garments handled with care" },
             ].map((service) => (
               <div
                 key={service.name}
                 className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
               >
                 <h3 className="font-semibold text-lg">{service.name}</h3>
-                <p className="mt-2 text-sm text-zinc-500">{service.price}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <div className="mt-20 border-t"></div>
-
-        {/* PRICING NOTE */}
-        <section className="mt-32">
-          <h2 className="text-2xl md:text-3xl font-bold">Pricing Information</h2>
-          <p className="mt-3 text-zinc-600 max-w-3xl">
-            Pricing depends on garment type, fabric, and complexity of the alteration.
-            Final pricing is provided during your in-store fitting.
-          </p>
-        </section>
-
-        <div className="mt-20 border-t"></div>
-
-        {/* REVIEW SNIPPET */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-bold">Trusted by Our Customers</h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {[ 
-              { quote: "They altered my wedding dress perfectly. I couldn’t be happier.", name: "Sarah M." },
-              { quote: "My suit fits better than when I bought it.", name: "James R." },
-              { quote: "Fast, professional, and very friendly.", name: "Emily T." },
-            ].map((review, idx) => (
-              <div key={idx} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-                <div className="text-yellow-500 text-sm">★★★★★</div>
-                <p className="mt-3 text-zinc-700">“{review.quote}”</p>
-                <div className="mt-4 text-sm text-zinc-500">— {review.name}, Google Review</div>
+                <p className="mt-2 text-sm text-zinc-500">{service.note}</p>
               </div>
             ))}
           </div>
@@ -96,10 +70,12 @@ export default function AlterationsPage() {
             <div>
               <h3 className="text-xl font-semibold">Ready to get the perfect fit?</h3>
               <p className="mt-2 text-zinc-600">
-                Schedule an appointment with our experienced tailors today.
+                Request an appointment and we’ll confirm the details in-store.
               </p>
             </div>
-            <Button>Book Appointment</Button>
+            <Link href="/book">
+              <Button>Request Appointment</Button>
+            </Link>
           </div>
         </section>
       </Container>

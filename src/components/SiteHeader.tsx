@@ -37,7 +37,7 @@ export default function SiteHeader() {
             href="/book"
             className={pathname === "/book" ? "text-zinc-900 font-semibold" : "hover:text-zinc-900"}
           >
-            Book
+            Request Appointment
           </Link>
           <Link
             href="/about"
@@ -70,7 +70,7 @@ export default function SiteHeader() {
             <Link onClick={() => setOpen(false)} href="/alterations">Alterations</Link>
             <Link onClick={() => setOpen(false)} href="/dry-cleaning">Dry Cleaning</Link>
             <Link onClick={() => setOpen(false)} href="/pricing">Pricing</Link>
-            <Link onClick={() => setOpen(false)} href="/book">Book</Link>
+            <Link onClick={() => setOpen(false)} href="/book">Request Appointment</Link>
             <Link onClick={() => setOpen(false)} href="/about">About Us</Link>
             <Link onClick={() => setOpen(false)} href="/contact">Contact</Link>
             <div className="pt-2 font-semibold">(615) 462-5145</div>

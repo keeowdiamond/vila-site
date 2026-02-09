@@ -1,7 +1,6 @@
-
-
 import Container from "../../components/Container";
 import Button from "../../components/Button";
+import Link from "next/link";
 
 export default function DryCleaningPage() {
   return (
@@ -18,8 +17,12 @@ export default function DryCleaningPage() {
               consistent quality, and convenient service.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button>Call Now</Button>
-              <Button variant="secondary">Visit Us</Button>
+              <a href="tel:6154625145">
+                <Button>Call Now</Button>
+              </a>
+              <Link href="/contact">
+                <Button variant="secondary">Visit Us</Button>
+              </Link>
             </div>
           </div>
 
@@ -32,7 +35,7 @@ export default function DryCleaningPage() {
         <div className="mt-20 border-t"></div>
 
         {/* WHAT WE CLEAN */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">What We Clean</h2>
           <p className="mt-3 text-zinc-600 max-w-3xl">
             We clean a wide range of garments and fabrics with care and attention to detail.
@@ -66,12 +69,14 @@ export default function DryCleaningPage() {
         <section className="mt-32 mb-32">
           <div className="rounded-3xl bg-white p-10 shadow-sm ring-1 ring-black/5 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-xl font-semibold">Questions about dry cleaning?</h3>
+              <h3 className="text-xl font-semibold">Need dry cleaning service?</h3>
               <p className="mt-2 text-zinc-600">
-                Call us or stop by our location during business hours.
+                Call us or visit us during business hours.
               </p>
             </div>
-            <Button>Call Now</Button>
+            <a href="tel:6154625145">
+              <Button>Call Now</Button>
+            </a>
           </div>
         </section>
       </Container>

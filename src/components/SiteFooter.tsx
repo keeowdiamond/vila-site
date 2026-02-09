@@ -1,8 +1,6 @@
-
-
 export default function SiteFooter() {
   return (
-    <footer className="mt-32 border-t bg-zinc-50">
+    <footer className="mt-32 border-t bg-white">
       <div className="mx-auto max-w-6xl px-6 py-16 grid gap-12 md:grid-cols-3">
         {/* BUSINESS INFO */}
         <div className="space-y-3 text-sm text-zinc-700">
@@ -33,7 +31,7 @@ export default function SiteFooter() {
             <li><a href="/alterations" className="hover:underline">Alterations</a></li>
             <li><a href="/dry-cleaning" className="hover:underline">Dry Cleaning</a></li>
             <li><a href="/pricing" className="hover:underline">Pricing</a></li>
-            <li><a href="/book" className="hover:underline">Book Appointment</a></li>
+            <li><a href="/book" className="hover:underline">Request Appointment</a></li>
             <li><a href="/contact" className="hover:underline">Contact</a></li>
           </ul>
         </div>
@@ -42,7 +40,6 @@ export default function SiteFooter() {
       <div className="border-t">
         <div className="mx-auto max-w-6xl px-6 py-6 text-xs text-zinc-500 flex flex-col md:flex-row justify-between gap-4">
           <div>© {new Date().getFullYear()} Vila Cleaners & Alterations</div>
-          <div>Website design preview</div>
         </div>
       </div>
     </footer>

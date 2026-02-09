@@ -1,12 +1,13 @@
 import Container from "../../components/Container";
 import Button from "../../components/Button";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
     <main>
       <Container>
         {/* HERO */}
-        <section className="relative mt-24 rounded-3xl bg-gradient-to-br from-stone-100 via-[var(--background)] to-[var(--accent-sage)]/10 px-6 py-16 grid gap-12 md:grid-cols-2 items-center">
+        <section className="relative mt-24 rounded-3xl bg-white shadow-sm ring-1 ring-black/5 px-6 py-16 grid gap-12 md:grid-cols-2 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               About Vila Cleaners & Alterations
@@ -21,13 +22,13 @@ export default function AboutPage() {
           </div>
 
           {/* IMAGE PLACEHOLDER */}
-          <div className="relative h-64 md:h-80 rounded-2xl border bg-gradient-to-br from-stone-50 to-stone-200 flex items-center justify-center text-zinc-500">
+          <div className="relative h-64 md:h-80 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 flex items-center justify-center text-zinc-500">
             Tailoring with Care (Image Placeholder)
           </div>
         </section>
 
         {/* STORY */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16 max-w-3xl">
+        <section className="mt-32 max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold">Our Story</h2>
           <p className="mt-6 text-zinc-600">
             Vila Cleaners & Alterations was built on years of hands-on experience and a simple belief:
@@ -41,7 +42,7 @@ export default function AboutPage() {
         </section>
 
         {/* VALUES */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">What We Value</h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {["Personal Service", "Attention to Detail", "Honest Pricing", "Respect for Every Garment"].map((value) => (
@@ -64,10 +65,12 @@ export default function AboutPage() {
             <div>
               <h3 className="text-xl font-semibold">We look forward to serving you</h3>
               <p className="mt-2 text-zinc-600">
-                Visit us in Smyrna or contact us with any questions about our services.
+                Visit us in Smyrna or request service during business hours.
               </p>
             </div>
-            <Button>Contact Us</Button>
+            <Link href="/contact">
+              <Button>Contact Us</Button>
+            </Link>
           </div>
         </section>
       </Container>

@@ -1,7 +1,6 @@
-
-
 import Container from "../../components/Container";
 import Button from "../../components/Button";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -13,7 +12,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="mt-4 text-lg text-zinc-600 max-w-3xl">
-            Have questions or need directions? Contact us or visit our location during business hours.
+            Visit us or contact our team during business hours.
           </p>
         </section>
 
@@ -46,9 +45,27 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* MAP PLACEHOLDER */}
-          <div className="h-80 rounded-2xl border bg-zinc-50 flex items-center justify-center text-zinc-400">
-            Map Placeholder
+          {/* MAP */}
+          <div>
+            <div className="h-80 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 overflow-hidden">
+              <iframe
+                title="Vila Cleaners & Alterations Map"
+                src="https://www.google.com/maps?q=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="mt-3">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-zinc-900 underline underline-offset-4"
+              >
+                Get Directions
+              </a>
+            </div>
           </div>
         </section>
 
@@ -56,7 +73,7 @@ export default function ContactPage() {
 
         {/* CONTACT FORM */}
         <section className="mt-32 mb-32">
-          <h2 className="text-2xl md:text-3xl font-bold">Send Us a Message</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">Contact Our Team</h2>
 
           <div className="mt-10 max-w-3xl rounded-2xl border bg-white p-8 shadow-sm">
             <form className="grid gap-6">
@@ -82,7 +99,7 @@ export default function ContactPage() {
                 <label className="block text-sm font-medium text-zinc-700">Message</label>
                 <textarea
                   rows={4}
-                  placeholder="How can we help you?"
+                  placeholder="General messages only. Pricing and service details are confirmed in-store."
                   className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
                 />
               </div>

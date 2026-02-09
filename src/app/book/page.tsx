@@ -84,7 +84,7 @@ export default function BookPage() {
 
 
         {/* WHAT TO EXPECT */}
-        <section className="mt-32 mb-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32 mb-32">
           <h2 className="text-2xl md:text-3xl font-bold">What to Expect</h2>
           <ul className="mt-6 space-y-3 text-zinc-600 max-w-3xl list-disc pl-5">
             <li>Please bring the garment you would like altered to your appointment.</li>

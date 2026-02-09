@@ -1,13 +1,13 @@
 import Container from "@/components/Container";
 import Button from "@/components/Button";
-import AssistantPreview from "@/components/AssistantPreview";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
     <main>
       <Container>
         {/* HERO SECTION */}
-        <section className="relative mt-24 rounded-3xl bg-gradient-to-br from-stone-100 via-[var(--background)] to-[var(--accent-sage)]/30 px-6 py-16 grid gap-12 md:grid-cols-2 items-center overflow-hidden">
+        <section className="relative mt-24 rounded-3xl bg-white shadow-sm ring-1 ring-black/5 px-6 py-16 grid gap-12 md:grid-cols-2 items-center overflow-hidden">
           {/* LEFT */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -23,18 +23,22 @@ export default function HomePage() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button>
-                Book Appointment
-              </Button>
+              <Link href="/book">
+                <Button>
+                  Request Appointment
+                </Button>
+              </Link>
 
-              <Button variant="secondary">
-                Call Now
-              </Button>
+              <a href="tel:6154625145">
+                <Button variant="secondary">
+                  Call Now
+                </Button>
+              </a>
             </div>
           </div>
 
           {/* RIGHT — IMAGE PLACEHOLDER */}
-          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-sm bg-stone-100">
+          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-sm bg-white ring-1 ring-black/5">
             <img
               src="/images/hero/hero-tailoring.jpg"
               alt="Tailoring in progress"
@@ -44,7 +48,7 @@ export default function HomePage() {
         </section>
 
         {/* HOW IT WORKS */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">
             What to Expect
           </h2>
@@ -70,7 +74,7 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-stone-100"
+                className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-black/5"
               >
                 <div className="text-sm font-semibold text-zinc-500">Step</div>
                 <h3 className="mt-2 text-lg font-semibold">{item.step}</h3>
@@ -81,7 +85,7 @@ export default function HomePage() {
         </section>
 
         {/* ALTERATIONS SERVICES */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">
             Alterations Services
           </h2>
@@ -93,23 +97,22 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             {[
-              { name: "Wedding & Prom Dress Alterations", price: "Starting at $XX" },
-              { name: "Suit Tailoring", price: "Starting at $XX" },
-              { name: "Pants Hemming", price: "Starting at $XX" },
-              { name: "Garment Resizing", price: "Starting at $XX" },
-              { name: "Zipper Repairs", price: "Starting at $XX" },
-              { name: "Custom Adjustments", price: "Pricing varies" },
+              { name: "Wedding & Prom Dress Alterations", note: "In-store fitting and inspection" },
+              { name: "Suit Tailoring", note: "Professional tailoring for a clean fit" },
+              { name: "Pants Hemming", note: "Common service — quick turnaround" },
+              { name: "Garment Resizing", note: "Complex items may vary" },
+              { name: "Zipper Repairs", note: "Repairs for pants, jeans, coats, and dresses" },
+              { name: "Custom Adjustments", note: "Unique garments handled with care" },
             ].map((service) => (
               <div
                 key={service.name}
-                className="relative rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-stone-100"
+                className="relative rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-black/5"
               >
-                <div className="mb-3 h-1 w-10 rounded-full bg-[var(--accent-sage)]/80"></div>
                 <h3 className="font-semibold text-lg">
                   {service.name}
                 </h3>
                 <p className="mt-2 text-sm text-zinc-500">
-                  {service.price}
+                  {service.note}
                 </p>
               </div>
             ))}
@@ -151,31 +154,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* PRICING GUIDE */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-bold">General Pricing Guide</h2>
-
-          <p className="mt-3 text-zinc-600 max-w-3xl">
-            Pricing varies based on garment type and complexity. Final pricing is provided in-store.
-          </p>
-
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
-            {[
-              { label: "Pants Hemming", price: "from $XX" },
-              { label: "Dress Alterations", price: "from $XX" },
-              { label: "Suit Tailoring", price: "from $XX" },
-              { label: "Zipper Repair", price: "from $XX" },
-            ].map((item) => (
-              <div key={item.label} className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6">
-                <div className="text-sm text-zinc-500">{item.label}</div>
-                <div className="mt-2 text-xl font-semibold">{item.price}</div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <div className="mt-20 border-t"></div>
-
         {/* BOOKING SECTION */}
         <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">Book an Appointment</h2>
@@ -185,125 +163,24 @@ export default function HomePage() {
           </p>
 
           <div className="mt-10 max-w-3xl rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-8">
-            <form className="grid gap-6 sm:grid-cols-2">
-              <div className="sm:col-span-1">
-                <label className="block text-sm font-medium text-zinc-700">Name</label>
-                <input
-                  type="text"
-                  placeholder="Your full name"
-                  className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-sage)]/40"
-                />
-              </div>
-
-              <div className="sm:col-span-1">
-                <label className="block text-sm font-medium text-zinc-700">Phone</label>
-                <input
-                  type="tel"
-                  placeholder="(XXX) XXX-XXXX"
-                  className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-sage)]/40"
-                />
-              </div>
-
-              <div className="sm:col-span-2">
-                <label className="block text-sm font-medium text-zinc-700">Email</label>
-                <input
-                  type="email"
-                  placeholder="you@example.com"
-                  className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-sage)]/40"
-                />
-              </div>
-
-              <div className="sm:col-span-2">
-                <label className="block text-sm font-medium text-zinc-700">Service Type</label>
-                <select className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-sage)]/40">
-                  <option>Wedding / Formal Alterations</option>
-                  <option>Suit Tailoring</option>
-                  <option>Pants Hemming</option>
-                  <option>Garment Repair</option>
-                  <option>Other</option>
-                </select>
-                <div className="sm:col-span-2 rounded-xl border bg-stone-100 p-4">
-                  <div className="flex items-center gap-2">
-                    <div className="rounded-full bg-[var(--accent-sage)]/20 px-2 py-0.5 text-xs font-semibold text-[var(--accent-sage)]">
-                      Smart Assistant (Preview)
-                    </div>
-                  </div>
-
-                  <p className="mt-3 text-sm text-zinc-600">
-                    Based on the service you select, we’ll guide you on what details help us best prepare for your visit.
-                  </p>
-
-                  <ul className="mt-3 list-disc pl-5 text-sm text-zinc-600 space-y-1">
-                    <li>Event date or timeline</li>
-                    <li>Type of garment (dress, suit, pants, etc.)</li>
-                    <li>Any fit concerns you’ve noticed</li>
-                  </ul>
-
-                  <p className="mt-3 text-xs text-zinc-500">
-                    Preview only — final details are always confirmed in-store.
-                  </p>
-                </div>
-              </div>
-
-              <div className="sm:col-span-2">
-                <label className="block text-sm font-medium text-zinc-700">Notes</label>
-                <textarea
-                  placeholder="Tell us about your garment or timeline"
-                  rows={4}
-                  className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent-sage)]/40"
-                />
-              </div>
-
-              <div className="sm:col-span-2">
-                <button
-                  type="button"
-                  className="w-full rounded-xl bg-[var(--accent-sage)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--accent-sage)]/90 focus:outline-none focus:ring-2 focus:ring-[var(--accent-sage)]/40"
-                >
-                  Submit Request
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
-
-        <div className="mt-20 border-t"></div>
-
-        {/* GOOGLE REVIEWS */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-bold">What Our Customers Say</h2>
-
-          <p className="mt-3 text-zinc-600 max-w-3xl">
-            Rated ★★★★☆ on Google (reviews shown for preview purposes).
-          </p>
-
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {[ 
-              {
-                quote: "They did an amazing job altering my wedding dress. Highly recommend.",
-                name: "Sarah M."
-              },
-              {
-                quote: "Quick turnaround and great attention to detail on my suit.",
-                name: "James R."
-              },
-              {
-                quote: "Very professional and friendly service. Will be back.",
-                name: "Emily T."
-              }
-            ].map((review, idx) => (
-            <div key={idx} className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6">
-                <div className="text-yellow-500 text-sm">★★★★★</div>
-                <p className="mt-3 text-zinc-700">“{review.quote}”</p>
-                <div className="mt-4 text-sm text-zinc-500">— {review.name}, Google Review</div>
-              </div>
-            ))}
+            <p className="text-sm text-zinc-600">
+              Payment is required in-store before work begins. Final details and pricing are confirmed during your visit.
+            </p>
+            <div className="mt-6 flex flex-col sm:flex-row gap-4">
+              <Link href="/book">
+                <Button>Request Appointment</Button>
+              </Link>
+              <Link href="/pricing">
+                <Button variant="secondary">View Pricing</Button>
+              </Link>
+            </div>
           </div>
         </section>
 
         <div className="mt-20 border-t"></div>
 
         {/* DRY CLEANING PREVIEW */}
-        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+        <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">Dry Cleaning</h2>
 
           <p className="mt-3 text-zinc-600 max-w-3xl">
@@ -312,8 +189,7 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {["Suits & Blazers", "Dresses", "Coats & Jackets", "Specialty Items"].map((item) => (
-              <div key={item} className="relative rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-stone-100">
-                <div className="mb-3 h-1 w-10 rounded-full bg-[var(--accent-sage)]/80"></div>
+              <div key={item} className="relative rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-black/5">
                 <div className="font-semibold">{item}</div>
                 <div className="mt-2 text-sm text-zinc-500">Pricing varies</div>
               </div>
@@ -334,13 +210,12 @@ export default function HomePage() {
               <p><strong>Hours:</strong><br />Mon–Fri: 8:30am – 6:00pm<br />Sat: 9:00am – 5:00pm<br />Sun: Closed</p>
             </div>
 
-            <div className="h-64 rounded-2xl border bg-zinc-50 flex items-center justify-center text-zinc-400">
+            <div className="h-64 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 flex items-center justify-center text-zinc-400">
               Map Placeholder
             </div>
           </div>
         </section>
       </Container>
-      <AssistantPreview />
     </main>
   );
 }
