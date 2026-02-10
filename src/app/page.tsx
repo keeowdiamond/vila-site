@@ -84,6 +84,62 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* GOOGLE REVIEWS */}
+        <section className="mt-32">
+          <h2 className="text-2xl md:text-3xl font-bold">
+            What Our Customers Say
+          </h2>
+
+          <p className="mt-3 text-zinc-600 max-w-3xl">
+            Trusted by the Smyrna community for quality alterations and dependable service.
+          </p>
+
+          <p className="mt-2 text-xs text-zinc-500">
+            Feedback summarized from public Google reviews.
+          </p>
+
+          <div className="mt-10 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 overflow-hidden p-8">
+            <div className="mt-0 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+              {[
+                {
+                  title: "Wedding & Formal Wear",
+                  text: "Many customers mention bringing in wedding and formal dresses with tight deadlines and being impressed by the quality of the alterations and quick turnaround.",
+                },
+                {
+                  title: "Last-Minute Help",
+                  text: "Clients often describe the team as friendly, professional, and reassuring—especially when handling complex or last-minute alterations.",
+                },
+                {
+                  title: "Trusted by the Community",
+                  text: "Several reviewers say they continue returning for suits, dresses, and dry cleaning because of consistent results and dependable service.",
+                },
+              ].map((review, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6"
+                >
+                  <h3 className="text-sm font-semibold text-zinc-900">
+                    {review.title}
+                  </h3>
+                  <p className="mt-3 text-sm text-zinc-600">
+                    {review.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6">
+              <a
+                href="https://www.google.com/search?q=Vila+Cleaners+%26+Alterations+Smyrna+TN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-zinc-900 underline underline-offset-4"
+              >
+                View all reviews on Google
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ALTERATIONS SERVICES */}
         <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">
@@ -210,8 +266,26 @@ export default function HomePage() {
               <p><strong>Hours:</strong><br />Mon–Fri: 8:30am – 6:00pm<br />Sat: 9:00am – 5:00pm<br />Sun: Closed</p>
             </div>
 
-            <div className="h-64 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 flex items-center justify-center text-zinc-400">
-              Map Placeholder
+            <div>
+              <div className="h-64 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 overflow-hidden">
+                <iframe
+                  title="Vila Cleaners & Alterations Map"
+                  src="https://www.google.com/maps?q=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167&output=embed"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              <div className="mt-3">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-zinc-900 underline underline-offset-4"
+                >
+                  Get Directions
+                </a>
+              </div>
             </div>
           </div>
         </section>

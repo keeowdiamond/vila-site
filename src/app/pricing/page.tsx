@@ -7,7 +7,7 @@ export default function PricingPage() {
     <main>
       <Container>
         {/* PAGE HERO */}
-        <section className="mt-24">
+        <section className="mt-12">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Pricing Guide
           </h1>
@@ -19,6 +19,7 @@ export default function PricingPage() {
         {/* PRICING CARDS */}
         <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">Alterations Pricing</h2>
+          <div className="mt-3 h-0.5 w-12 bg-amber-300"></div>
           <p className="mt-4 text-zinc-600 max-w-3xl">
             Most alterations have starting prices listed below. Dresses and complex garments may require in-store inspection.
           </p>
@@ -115,6 +116,7 @@ export default function PricingPage() {
         {/* DRY CLEANING PRICING */}
         <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">Dry Cleaning Pricing</h2>
+          <div className="mt-3 h-0.5 w-12 bg-amber-300"></div>
           <p className="mt-4 text-zinc-600 max-w-3xl">
             Dry cleaning prices are listed as starting prices. Final pricing is confirmed in-store based on garment type and condition.
           </p>
@@ -144,15 +146,19 @@ export default function PricingPage() {
           </div>
         </section>
 
-        <div className="mt-20 border-t"></div>
+        <div className="mt-20 h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent"></div>
 
         {/* IMPORTANT NOTES */}
         <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">Important Pricing Notes</h2>
+          <div className="mt-3 h-0.5 w-12 bg-amber-300"></div>
           <ul className="mt-6 space-y-3 text-zinc-600 max-w-3xl list-disc pl-5">
             <li>Pricing varies depending on fabric, garment construction, and complexity.</li>
+            <li>
+              <span className="font-medium text-zinc-900">Express & Same-Day Service:</span>{" "}
+              Express and same-day services may be available depending on garment type and current workload. Availability and pricing are confirmed in-store. Delivery is not included.
+            </li>
             <li>Wedding and formal wear typically require an in-person fitting.</li>
-            <li>Express services may be available depending on garment and workload.</li>
             <li>Final pricing is confirmed in-store after evaluation.</li>
             <li>Payment is required in-store before work begins.</li>
           </ul>

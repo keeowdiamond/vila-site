@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function SiteHeader() {
   const pathname = usePathname();
@@ -9,52 +10,59 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b bg-white">
-      <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold hover:text-zinc-900">
-          Vila Cleaners & Alterations
+      <div className="mx-auto max-w-6xl px-6 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-6">
+        <Link href="/" className="inline-flex items-center leading-none">
+          <Image
+            src="/logo/logo1.png"
+            alt="Vila Cleaners & Alterations"
+            width={700}
+            height={200}
+            className="block w-[300px] h-auto"
+            priority
+          />
         </Link>
 
-        <nav className="hidden md:flex gap-6 text-sm text-zinc-600">
+        <nav className="hidden md:flex justify-center gap-4 text-[15px] text-zinc-600 whitespace-nowrap">
           <Link
             href="/alterations"
-            className={pathname === "/alterations" ? "text-zinc-900 font-semibold" : "hover:text-zinc-900"}
+            className={pathname === "/alterations" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
           >
             Alterations
           </Link>
           <Link
             href="/dry-cleaning"
-            className={pathname === "/dry-cleaning" ? "text-zinc-900 font-semibold" : "hover:text-zinc-900"}
+            className={pathname === "/dry-cleaning" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
           >
             Dry Cleaning
           </Link>
           <Link
             href="/pricing"
-            className={pathname === "/pricing" ? "text-zinc-900 font-semibold" : "hover:text-zinc-900"}
+            className={pathname === "/pricing" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
           >
             Pricing
           </Link>
           <Link
             href="/book"
-            className={pathname === "/book" ? "text-zinc-900 font-semibold" : "hover:text-zinc-900"}
+            className={pathname === "/book" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
           >
             Request Appointment
           </Link>
           <Link
             href="/about"
-            className={pathname === "/about" ? "text-zinc-900 font-semibold" : "hover:text-zinc-900"}
+            className={pathname === "/about" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
           >
             About Us
           </Link>
           <Link
             href="/contact"
-            className={pathname === "/contact" ? "text-zinc-900 font-semibold" : "hover:text-zinc-900"}
+            className={pathname === "/contact" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
           >
             Contact
           </Link>
         </nav>
 
-        <div className="flex items-center gap-4">
-          <div className="hidden md:block text-sm font-semibold">(615) 462-5145</div>
+        <div className="flex items-center gap-4 shrink-0 ml-auto">
+          <div className="hidden md:block text-sm font-medium whitespace-nowrap">(615) 462-5145</div>
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden rounded-lg border px-3 py-2 text-sm"
