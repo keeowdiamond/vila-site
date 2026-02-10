@@ -25,37 +25,37 @@ export default function SiteHeader() {
         <nav className="hidden md:flex justify-center gap-4 text-[15px] text-zinc-600 whitespace-nowrap">
           <Link
             href="/alterations"
-            className={pathname === "/alterations" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
+            className={pathname === "/alterations" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
           >
             Alterations
           </Link>
           <Link
             href="/dry-cleaning"
-            className={pathname === "/dry-cleaning" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
+            className={pathname === "/dry-cleaning" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
           >
             Dry Cleaning
           </Link>
           <Link
             href="/pricing"
-            className={pathname === "/pricing" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
+            className={pathname === "/pricing" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
           >
             Pricing
           </Link>
           <Link
             href="/book"
-            className={pathname === "/book" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
+            className={pathname === "/book" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
           >
             Request Appointment
           </Link>
           <Link
             href="/about"
-            className={pathname === "/about" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
+            className={pathname === "/about" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
           >
             About Us
           </Link>
           <Link
             href="/contact"
-            className={pathname === "/contact" ? "text-zinc-900 font-medium" : "hover:text-zinc-900"}
+            className={pathname === "/contact" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
           >
             Contact
           </Link>

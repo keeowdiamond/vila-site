@@ -1,5 +1,3 @@
-
-
 import Container from "../../components/Container";
 import Button from "../../components/Button";
 
@@ -10,7 +8,7 @@ export default function BookPage() {
         {/* PAGE HERO */}
         <section className="mt-24">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Book an Appointment
+            Request an Appointment
           </h1>
           <p className="mt-4 text-lg text-zinc-600 max-w-3xl">
             Request an appointment for alterations or tailoring. Final details and pricing
@@ -20,6 +18,9 @@ export default function BookPage() {
 
 
         {/* BOOKING FORM */}
+        <p className="mt-6 max-w-3xl text-zinc-600">
+          This form is a request only. Appointment details and pricing are confirmed after review or during your in-store visit.
+        </p>
         <section className="mt-32">
           <div className="max-w-3xl rounded-2xl bg-white p-8 shadow-sm ring-1 ring-black/5">
             <form className="grid gap-6 sm:grid-cols-2">
@@ -53,11 +54,13 @@ export default function BookPage() {
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium text-zinc-700">Service Type</label>
                 <select className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900">
-                  <option>Wedding / Formal Alterations</option>
-                  <option>Suit Tailoring</option>
-                  <option>Pants Hemming</option>
-                  <option>Garment Repair</option>
-                  <option>Other</option>
+                  <option>Wedding / Formal Wear</option>
+                  <option>Suit & Jacket Tailoring</option>
+                  <option>Pants Alterations</option>
+                  <option>Dress Alterations (Non-Wedding)</option>
+                  <option>Garment Repairs</option>
+                  <option>Dry Cleaning Inquiry</option>
+                  <option>Other / Not Sure</option>
                 </select>
               </div>
 
@@ -75,7 +78,7 @@ export default function BookPage() {
                   type="button"
                   className="w-full rounded-xl bg-zinc-900 px-6 py-3 text-sm font-semibold text-white hover:bg-zinc-800"
                 >
-                  Submit Request
+                  Request Appointment
                 </button>
               </div>
             </form>
