@@ -36,18 +36,6 @@ export default function SiteHeader() {
             Dry Cleaning
           </Link>
           <Link
-            href="/pricing"
-            className={pathname === "/pricing" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
-          >
-            Pricing
-          </Link>
-          <Link
-            href="/book"
-            className={pathname === "/book" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
-          >
-            Request Appointment
-          </Link>
-          <Link
             href="/about"
             className={pathname === "/about" ? "text-zinc-900 font-medium" : "text-zinc-600 transition-all duration-200 ease-out hover:text-zinc-900 hover:-translate-y-[1px]"}
           >
@@ -62,7 +50,18 @@ export default function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-4 shrink-0 ml-auto">
-          <div className="hidden md:block text-sm font-medium whitespace-nowrap">(615) 462-5145</div>
+          <a
+            href="tel:+16154625145"
+            className="hidden md:inline-flex text-sm font-medium whitespace-nowrap hover:text-zinc-900"
+          >
+            (615) 462-5145
+          </a>
+          <a
+            href="tel:+16154625145"
+            className="hidden md:inline-flex items-center rounded-lg border border-zinc-200 px-3 py-2 text-sm font-medium text-zinc-900 shadow-sm hover:-translate-y-[1px] hover:shadow-md transition-all duration-200 ease-out"
+          >
+            Call Now
+          </a>
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden rounded-lg border px-3 py-2 text-sm"
@@ -77,11 +76,14 @@ export default function SiteHeader() {
           <nav className="flex flex-col px-6 py-4 gap-4 text-sm text-zinc-700">
             <Link onClick={() => setOpen(false)} href="/alterations">Alterations</Link>
             <Link onClick={() => setOpen(false)} href="/dry-cleaning">Dry Cleaning</Link>
-            <Link onClick={() => setOpen(false)} href="/pricing">Pricing</Link>
-            <Link onClick={() => setOpen(false)} href="/book">Request Appointment</Link>
             <Link onClick={() => setOpen(false)} href="/about">About Us</Link>
             <Link onClick={() => setOpen(false)} href="/contact">Contact</Link>
-            <div className="pt-2 font-semibold">(615) 462-5145</div>
+            <a
+              href="tel:+16154625145"
+              className="pt-2 font-semibold text-zinc-900"
+            >
+              Call (615) 462-5145
+            </a>
           </nav>
         </div>
       )}

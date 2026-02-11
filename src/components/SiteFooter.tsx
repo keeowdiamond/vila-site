@@ -11,7 +11,11 @@ export default function SiteFooter() {
             901 Rock Springs Rd #130<br />
             Smyrna, TN 37167
           </p>
-          <p>(615) 462-5145</p>
+          <p>
+            <a href="tel:+16154625145" className="hover:underline">
+              (615) 462-5145
+            </a>
+          </p>
         </div>
 
         {/* HOURS */}
@@ -30,8 +34,6 @@ export default function SiteFooter() {
           <ul className="space-y-2">
             <li><a href="/alterations" className="hover:underline">Alterations</a></li>
             <li><a href="/dry-cleaning" className="hover:underline">Dry Cleaning</a></li>
-            <li><a href="/pricing" className="hover:underline">Pricing</a></li>
-            <li><a href="/book" className="hover:underline">Request Appointment</a></li>
             <li><a href="/contact" className="hover:underline">Contact</a></li>
           </ul>
         </div>

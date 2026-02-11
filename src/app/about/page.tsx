@@ -15,8 +15,7 @@ export default function AboutPage() {
                 About Vila Cleaners & Alterations
               </h1>
               <p className="mt-4 text-lg text-zinc-600 max-w-3xl">
-                Family-owned and personally operated, proudly serving the Smyrna community with care,
-                experience, and attention to detail.
+                Led by master tailor Keeow Phonxaya, proudly serving the Smyrna community with over 30 years of experience, craftsmanship, and care.
               </p>
               <p className="mt-6 text-zinc-600 max-w-3xl">
                 Every garment entrusted to us is handled personally, with the respect and care it deserves.
@@ -34,14 +33,25 @@ export default function AboutPage() {
         <SectionReveal>
           <section className="mt-32 max-w-3xl">
             <h2 className="text-2xl md:text-3xl font-bold">Our Story</h2>
+
             <p className="mt-6 text-zinc-600">
-              Vila Cleaners & Alterations was built on years of hands-on experience and a simple belief:
-              clothing should be treated with care, patience, and respect. As a family-owned business,
-              we take pride in offering personal service you can trust.
+              Vila Cleaners & Alterations is led by Keeow Phonxaya, a master tailor with more than 30 years of hands-on experience in garment alterations and professional tailoring. Her journey began long before Vila, built on resilience, discipline, and a deep respect for craftsmanship.
             </p>
+
             <p className="mt-4 text-zinc-600">
-              From everyday garments to important pieces like wedding dresses and suits, our approach
-              has always been the same — careful workmanship, honest communication, and attention to detail.
+              Originally from Laos, Keeow came to the United States without knowing English. Through determination and hard work, she taught herself the language while building her skills in sewing and garment construction. Before immigrating, she worked as an architect in Laos — a background that shaped her attention to structure, balance, and detail, qualities that naturally carried into her tailoring work.
+            </p>
+
+            <p className="mt-4 text-zinc-600">
+              Over the years, Keeow refined her craft while working with a wide range of clients in Nashville, including professionals, public figures, and individuals in high-profile industries. Her experience includes tailoring garments for government officials, news anchors, and members of the country music community — work that demands precision, discretion, and exceptional standards.
+            </p>
+
+            <p className="mt-4 text-zinc-600">
+              As a wife and mother, she chose to build a business close to home so she could serve her community while caring for her family. Recognizing the need for high-quality alteration services in Smyrna, she transformed Vila into a trusted destination for professional tailoring while continuing to offer dependable dry cleaning services.
+            </p>
+
+            <p className="mt-4 text-zinc-600">
+              Today, every garment is handled personally with care, patience, and attention to detail. At Vila Cleaners & Alterations, craftsmanship comes first, and every customer is treated with respect.
             </p>
           </section>
         </SectionReveal>

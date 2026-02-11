@@ -28,6 +28,7 @@ export default function ContactPage() {
             <div className="space-y-6 text-zinc-700">
               <div>
                 <h2 className="text-xl font-semibold">Location</h2>
+                <div className="mt-2 h-1 w-10 bg-yellow-400 rounded-full"></div>
                 <p className="mt-2">
                   901 Rock Springs Rd #130<br />
                   Smyrna, TN 37167
@@ -36,11 +37,23 @@ export default function ContactPage() {
 
               <div>
                 <h2 className="text-xl font-semibold">Phone</h2>
-                <p className="mt-2">(615) 462-5145</p>
+                <div className="mt-2 h-1 w-10 bg-yellow-400 rounded-full"></div>
+                <p className="mt-2">
+                  <a
+                    href="tel:+16154625145"
+                    className="font-medium text-zinc-900 hover:underline"
+                  >
+                    (615) 462-5145
+                  </a>
+                </p>
+                <p className="mt-2 text-sm text-zinc-500">
+                  For fastest service, please call during business hours.
+                </p>
               </div>
 
               <div>
                 <h2 className="text-xl font-semibold">Hours</h2>
+                <div className="mt-2 h-1 w-10 bg-yellow-400 rounded-full"></div>
                 <p className="mt-2">
                   Mon–Fri: 8:30am – 6:00pm<br />
                   Sat: 9:00am – 5:00pm<br />
@@ -70,50 +83,6 @@ export default function ContactPage() {
                   Get Directions
                 </a>
               </div>
-            </div>
-          </section>
-        </SectionReveal>
-
-        <div className="mt-20 border-t"></div>
-
-        {/* CONTACT FORM */}
-        <SectionReveal>
-          <section className="mt-32 mb-32">
-            <h2 className="text-2xl md:text-3xl font-bold">Contact Our Team</h2>
-
-            <div className="mt-10 max-w-3xl rounded-2xl border bg-white p-8 shadow-sm">
-              <form className="grid gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-zinc-700">Name</label>
-                  <input
-                    type="text"
-                    placeholder="Your full name"
-                    className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-zinc-700">Email</label>
-                  <input
-                    type="email"
-                    placeholder="you@example.com"
-                    className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-zinc-700">Message</label>
-                  <textarea
-                    rows={4}
-                    placeholder="General messages only. Pricing and service details are confirmed in-store."
-                    className="mt-2 w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
-                  />
-                </div>
-
-                <div>
-                  <Button>Send Message</Button>
-                </div>
-              </form>
             </div>
           </section>
         </SectionReveal>

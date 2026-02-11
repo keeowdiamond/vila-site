@@ -25,12 +25,6 @@ export default function HomePage() {
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link href="/book">
-                  <Button>
-                    Request Appointment
-                  </Button>
-                </Link>
-
                 <a href="tel:6154625145">
                   <Button variant="secondary">
                     Call Now
@@ -216,31 +210,6 @@ export default function HomePage() {
                   alt="Tailoring with care"
                   className="h-full w-full object-cover"
                 />
-              </div>
-            </div>
-          </section>
-        </SectionReveal>
-
-        {/* BOOKING SECTION */}
-        <SectionReveal>
-          <section className="mt-32">
-            <h2 className="text-2xl md:text-3xl font-bold">Book an Appointment</h2>
-
-            <p className="mt-3 text-zinc-600 max-w-3xl">
-              Request an appointment for alterations or tailoring. Final details and pricing will be confirmed in-store.
-            </p>
-
-            <div className="mt-10 max-w-3xl rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-8">
-              <p className="text-sm text-zinc-600">
-                Payment is required in-store before work begins. Final details and pricing are confirmed during your visit.
-              </p>
-              <div className="mt-6 flex flex-col sm:flex-row gap-4">
-                <Link href="/book">
-                  <Button>Request Appointment</Button>
-                </Link>
-                <Link href="/pricing">
-                  <Button variant="secondary">View Pricing</Button>
-                </Link>
               </div>
             </div>
           </section>

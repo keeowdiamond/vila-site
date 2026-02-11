@@ -34,6 +34,45 @@ export default function DryCleaningPage() {
 
         <div className="mt-20 border-t"></div>
 
+        {/* IMPORTANT PRICING NOTES */}
+        <section className="mt-32 max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Important Pricing Notes
+          </h2>
+          <div className="mt-2 h-1 w-12 bg-yellow-400 rounded-full"></div>
+
+          <ul className="mt-8 space-y-4 text-zinc-700">
+            <li>
+              Pricing varies depending on fabric, garment construction, and
+              complexity.
+            </li>
+            <li>
+              <strong>Express & Same-Day Service:</strong> Express and same-day
+              services may be available depending on garment type and current
+              workload. Availability and pricing are confirmed in-store.
+              Delivery is not included.
+            </li>
+            <li>
+              <strong>Military & Veteran Discount:</strong> We proudly offer a
+              discount for active-duty military and veterans. Please mention
+              in-store.
+            </li>
+            <li>
+              <strong>First-Time Customer Discount:</strong> New customers
+              receive 10% off their first service.
+            </li>
+            <li>
+              Wedding and formal wear typically require an in-person fitting.
+            </li>
+            <li>
+              Final pricing is confirmed in-store after evaluation.
+            </li>
+            <li>
+              Payment is required in-store before work begins.
+            </li>
+          </ul>
+        </section>
+
         {/* WHAT WE CLEAN */}
         <section className="mt-32">
           <h2 className="text-2xl md:text-3xl font-bold">What We Clean</h2>
@@ -53,14 +92,57 @@ export default function DryCleaningPage() {
 
         <div className="mt-20 border-t"></div>
 
-        {/* PRICING & TURNAROUND */}
+        {/* DRY CLEANING STARTING PRICES */}
         <section className="mt-32">
-          <h2 className="text-2xl md:text-3xl font-bold">Pricing & Turnaround</h2>
-          <ul className="mt-6 space-y-3 text-zinc-600 max-w-3xl list-disc pl-5">
-            <li>Pricing varies based on garment type, fabric, and care requirements.</li>
-            <li>Standard turnaround times apply; rush service may be available.</li>
-            <li>Final pricing is confirmed in-store.</li>
-          </ul>
+          <h2 className="text-2xl md:text-3xl font-bold">Dry Cleaning Starting Prices</h2>
+          <p className="mt-3 text-zinc-600 max-w-3xl">
+            All prices listed are starting prices. Final pricing is determined in-store based on fabric,
+            size, condition, and care requirements.
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 max-w-4xl">
+            <div className="flex justify-between border-b pb-2">
+              <span>Dress Shirts</span>
+              <span className="font-medium">Starting at $6.89</span>
+            </div>
+            <div className="flex justify-between border-b pb-2">
+              <span>Blouses</span>
+              <span className="font-medium">Starting at $7.65</span>
+            </div>
+            <div className="flex justify-between border-b pb-2">
+              <span>Pants / Slacks</span>
+              <span className="font-medium">Starting at $7.95</span>
+            </div>
+            <div className="flex justify-between border-b pb-2">
+              <span>Jeans</span>
+              <span className="font-medium">Starting at $8.99</span>
+            </div>
+            <div className="flex justify-between border-b pb-2">
+              <span>Jackets / Blazers</span>
+              <span className="font-medium">Starting at $9.95</span>
+            </div>
+            <div className="flex justify-between border-b pb-2">
+              <span>Dresses</span>
+              <span className="font-medium">Starting at $17.50</span>
+            </div>
+            <div className="flex justify-between border-b pb-2">
+              <span>Formal Dresses & Gowns</span>
+              <span className="font-medium">Starting at $41.95</span>
+            </div>
+            <div className="flex justify-between border-b pb-2">
+              <span>Suits (2–3 Piece)</span>
+              <span className="font-medium">Starting at $17.90</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Coats & Specialty Items</span>
+              <span className="font-medium">Price varies</span>
+            </div>
+          </div>
+
+          <p className="mt-6 text-sm text-zinc-500 max-w-3xl">
+            Prices may vary based on fabric type, garment condition, size, and special care requirements.
+            Please call or visit us for exact pricing.
+          </p>
         </section>
 
         <div className="mt-20 border-t"></div>
