@@ -1,48 +1,79 @@
 export default function SiteFooter() {
   return (
-    <footer className="mt-32 border-t bg-white">
-      <div className="mx-auto max-w-6xl px-6 py-16 grid gap-12 md:grid-cols-3">
-        {/* BUSINESS INFO */}
-        <div className="space-y-3 text-sm text-zinc-700">
-          <div className="text-lg font-semibold text-zinc-900">
-            Vila Cleaners & Alterations
+    <footer className="mt-40 relative bg-gradient-to-b from-[#0a221c] to-[#061410] border-t border-[#d4af37]/50 shadow-[0_-30px_80px_rgba(0,0,0,0.45)]">
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-20">
+        
+        <div className="grid gap-14 md:grid-cols-4">
+
+          {/* BRAND */}
+          <div>
+            <h3 className="text-[#d4af37] text-lg font-semibold tracking-wide">
+              Vila Cleaners & Alterations
+            </h3>
+            <p className="mt-4 text-white/70 text-sm leading-relaxed max-w-xs">
+              Professional alterations and dry cleaning services in Smyrna, Tennessee.
+              Family-owned. Master craftsmanship. Trusted for over 30 years.
+            </p>
           </div>
-          <p>
-            901 Rock Springs Rd #130<br />
-            Smyrna, TN 37167
-          </p>
-          <p>
-            <a href="tel:+16154625145" className="hover:underline">
-              (615) 462-5145
-            </a>
-          </p>
+
+          {/* SERVICES */}
+          <div>
+            <h4 className="text-[#d4af37] font-semibold mb-5">Services</h4>
+            <ul className="space-y-3 text-sm text-white/70">
+              <li>
+                <a href="/alterations" className="hover:text-[#d4af37] transition-colors">
+                  Alterations
+                </a>
+              </li>
+              <li>
+                <a href="/alterations" className="hover:text-[#d4af37] transition-colors">
+                  Wedding Dress Alterations
+                </a>
+              </li>
+              <li>
+                <a href="/alterations" className="hover:text-[#d4af37] transition-colors">
+                  Suit Tailoring
+                </a>
+              </li>
+              <li>
+                <a href="/dry-cleaning" className="hover:text-[#d4af37] transition-colors">
+                  Dry Cleaning
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* CONTACT */}
+          <div>
+            <h4 className="text-[#d4af37] font-semibold mb-5">Contact</h4>
+            <ul className="space-y-3 text-sm text-white/70">
+              <li>901 Rock Springs Rd #130</li>
+              <li>Smyrna, TN 37167</li>
+              <li>
+                <a href="tel:+16154625145" className="hover:text-[#d4af37] transition-colors">
+                  (615) 462-5145
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* HOURS */}
+          <div>
+            <h4 className="text-[#d4af37] font-semibold mb-5">Business Hours</h4>
+            <ul className="space-y-3 text-sm text-white/70">
+              <li>Mon–Fri: 8:30am – 6:00pm</li>
+              <li>Saturday: 9:00am – 5:00pm</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
+
         </div>
 
-        {/* HOURS */}
-        <div className="space-y-3 text-sm text-zinc-700">
-          <div className="font-semibold text-zinc-900">Business Hours</div>
-          <p>
-            Mon–Fri: 8:30am – 6:00pm<br />
-            Sat: 9:00am – 5:00pm<br />
-            Sun: Closed
-          </p>
+        <div className="mt-16 pt-6 border-t border-white/10 text-center text-xs text-white/50">
+          © {new Date().getFullYear()} Vila Cleaners & Alterations. All rights reserved.
         </div>
 
-        {/* QUICK LINKS */}
-        <div className="space-y-3 text-sm text-zinc-700">
-          <div className="font-semibold text-zinc-900">Quick Links</div>
-          <ul className="space-y-2">
-            <li><a href="/alterations" className="hover:underline">Alterations</a></li>
-            <li><a href="/dry-cleaning" className="hover:underline">Dry Cleaning</a></li>
-            <li><a href="/contact" className="hover:underline">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="border-t">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-xs text-zinc-500 flex flex-col md:flex-row justify-between gap-4">
-          <div>© {new Date().getFullYear()} Vila Cleaners & Alterations</div>
-        </div>
       </div>
     </footer>
   );
