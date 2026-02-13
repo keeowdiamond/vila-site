@@ -24,6 +24,7 @@ export const metadata = {
 
 import Button from "../../components/Button";
 import Link from "next/link";
+import SectionReveal from "../../components/SectionReveal";
 
 export default function AlterationsPage() {
   return (
@@ -56,7 +57,8 @@ export default function AlterationsPage() {
       />
 
       {/* HERO - EDITORIAL ASYMMETRICAL */}
-      <section className="relative -mx-6 md:-mx-10 overflow-hidden">
+      <SectionReveal>
+      <section className="relative overflow-hidden">
 
         {/* Forest Emerald Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19]"></div>
@@ -73,7 +75,7 @@ export default function AlterationsPage() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold leading-[1.1] tracking-tight text-white">
-              Wedding Dress & Formal Wear Alterations in Smyrna, TN
+              Wedding Dress, Suit & Formal Wear Alterations in Smyrna, TN
             </h1>
 
             <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
@@ -83,7 +85,7 @@ export default function AlterationsPage() {
             </p>
 
             <div className="mt-10">
-              <a href="tel:6154625145">
+              <a href="tel:+16154625145">
                 <Button>Schedule Your Fitting</Button>
               </a>
             </div>
@@ -100,7 +102,9 @@ export default function AlterationsPage() {
 
         </div>
       </section>
+      </SectionReveal>
 
+      <SectionReveal>
       {/* SERVICES */}
       <section className="mt-32">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
@@ -138,7 +142,9 @@ export default function AlterationsPage() {
           </div>
         </div>
       </section>
+      </SectionReveal>
 
+      <SectionReveal>
       {/* BRIDAL ALTERATIONS SECTION */}
       <section className="mt-32">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center">
@@ -160,7 +166,7 @@ export default function AlterationsPage() {
               </p>
 
               <p>
-                We also provide prom dress alterations, bridesmaid dress adjustments, and formal evening wear tailoring for clients throughout Smyrna, Murfreesboro, and surrounding Tennessee communities.
+                We also provide prom dress alterations, bridesmaid dress adjustments, suit alterations, jacket resizing, and professional pants hemming for clients throughout Smyrna, Murfreesboro, La Vergne, and surrounding Tennessee communities. Whether you need wedding dress alterations or everyday tailoring, our local alteration shop delivers precision and reliable turnaround times.
               </p>
             </div>
           </div>
@@ -173,7 +179,9 @@ export default function AlterationsPage() {
 
         </div>
       </section>
+      </SectionReveal>
 
+      <SectionReveal>
       {/* PRICING */}
       <section className="mt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
@@ -187,26 +195,31 @@ export default function AlterationsPage() {
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-          <div className="mt-14 grid gap-12 md:grid-cols-2 text-white/70 leading-relaxed">
-            <div>
-              <h3 className="text-white font-semibold text-xl mb-4">Pants & Skirts</h3>
-              <ul className="space-y-2">
-                <li>Hem — starting at $18.95</li>
-                <li>Cuff — starting at $24.95</li>
-                <li>Waist adjustment — starting at $25.95</li>
-                <li>Tapered leg — starting at $25.95</li>
-              </ul>
+          <div className="mt-14 overflow-hidden rounded-2xl border border-[#1f5f4d]/40 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19] shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
+            <div className="grid grid-cols-2 bg-[#0c241e] text-[#d4af37] font-semibold text-sm uppercase tracking-wide">
+              <div className="px-6 py-4 border-b border-[#1f5f4d]/40">Service</div>
+              <div className="px-6 py-4 border-b border-[#1f5f4d]/40 text-right">Starting Price</div>
             </div>
-
-            <div>
-              <h3 className="text-white font-semibold text-xl mb-4">Suits & Jackets</h3>
-              <ul className="space-y-2">
-                <li>Full suit tailoring — starting at $125.00</li>
-                <li>Jacket sleeve shortening — starting at $45.95</li>
-                <li>Jacket size adjustment — starting at $45.95</li>
-                <li>Hem bottom — starting at $65.95</li>
-              </ul>
-            </div>
+            {[
+              ["Hem", "$18.95"],
+              ["Cuff", "$24.95"],
+              ["Waist Adjustment", "$25.95"],
+              ["Tapered Leg", "$25.95"],
+              ["Full Suit Tailoring", "$125.00"],
+              ["Jacket Sleeve Shortening", "$45.95"],
+              ["Jacket Size Adjustment", "$45.95"],
+              ["Hem Bottom", "$65.95"],
+            ].map(([service, price], index) => (
+              <div
+                key={service}
+                className={`grid grid-cols-2 items-center ${
+                  index !== 7 ? "border-b border-[#1f5f4d]/30" : ""
+                }`}
+              >
+                <div className="px-6 py-5 text-white/80">{service}</div>
+                <div className="px-6 py-5 text-right text-[#d4af37] font-semibold">{price}</div>
+              </div>
+            ))}
           </div>
 
           <p className="mt-10 text-white/50 text-sm max-w-3xl">
@@ -215,7 +228,9 @@ export default function AlterationsPage() {
           </p>
         </div>
       </section>
+      </SectionReveal>
 
+      <SectionReveal>
       {/* LOCAL ALTERATIONS SEO SECTION */}
       <section className="mt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
@@ -239,12 +254,14 @@ export default function AlterationsPage() {
             </p>
 
             <p>
-              Visit our Smyrna location for a professional consultation and accurate pricing evaluation before work begins.
+              Visit our Smyrna location for a professional consultation and accurate pricing evaluation before work begins, or <Link href="/contact" className="text-[#d4af37] underline underline-offset-4">contact our team</Link> to ask about suit alterations, bridal gown fittings, or general clothing adjustments in Smyrna, TN.
             </p>
           </div>
         </div>
       </section>
+      </SectionReveal>
 
+      <SectionReveal>
       {/* ALTERATIONS FAQ SECTION */}
       <section className="mt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
@@ -276,6 +293,7 @@ export default function AlterationsPage() {
           </div>
         </div>
       </section>
+      </SectionReveal>
 
       <script
         type="application/ld+json"
@@ -313,6 +331,7 @@ export default function AlterationsPage() {
         }}
       />
 
+      <SectionReveal>
       {/* CTA */}
       <section className="mt-32 mb-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
@@ -325,12 +344,13 @@ export default function AlterationsPage() {
                 Visit us in-store for a professional fitting and consultation.
               </p>
             </div>
-            <a href="tel:6154625145">
+            <a href="tel:+16154625145">
               <Button>Call Now</Button>
             </a>
           </div>
         </div>
       </section>
+      </SectionReveal>
 
     </main>
   );

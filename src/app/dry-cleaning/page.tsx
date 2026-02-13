@@ -1,4 +1,5 @@
 import Button from "../../components/Button";
+import SectionReveal from "../../components/SectionReveal";
 
 export const metadata = {
   title: "Dry Cleaning in Smyrna TN | Professional Garment Care | Vila Cleaners",
@@ -24,67 +25,52 @@ export const metadata = {
 
 export default function DryCleaningPage() {
   return (
-    <main>
+    <main className="relative">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(212,175,55,0.03),transparent_40%),radial-gradient(circle_at_80%_100%,rgba(15,58,47,0.05),transparent_50%)]"></div>
 
-      {/* HERO - PROFESSIONAL STRUCTURE */}
-      <section className="relative -mx-6 md:-mx-10 overflow-hidden">
+      {/* HERO - DISTINCT LAYOUT (CENTERED + STRONGER PRESENCE) */}
+      <SectionReveal>
+      <section className="relative overflow-hidden">
 
-        {/* Matte Charcoal Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1d20] via-[#14171a] to-[#0f1113]"></div>
+        {/* Deep Emerald Metallic Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0e2f26] via-[#0c241e] to-[#091a16]"></div>
 
-        {/* Subtle Emerald Edge Glow */}
-        <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#0f3a2f]/40 to-transparent"></div>
+        {/* Subtle Gold Ambient Edge */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.08),transparent_60%)]"></div>
 
-        {/* Bottom Fade */}
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#111315]"></div>
+        {/* Bottom Fade Into Page */}
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#061410]"></div>
 
-        <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-24">
+        <div className="relative max-w-5xl mx-auto px-6 md:px-10 lg:px-16 py-28 text-center">
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-
-            {/* Left Content */}
-            <div>
-              <div className="text-xs tracking-[0.3em] uppercase text-[#d4af37] font-semibold mb-4">
-                Professional Garment Care
-              </div>
-
-              <h1 className="text-4xl md:text-6xl font-bold leading-[1.1] tracking-tight text-white">
-                Reliable Dry Cleaning in Smyrna, TN
-              </h1>
-
-              <div className="mt-6 h-[2px] w-24 bg-[#d4af37]"></div>
-
-              <p className="mt-6 text-white/80 text-lg max-w-xl leading-relaxed">
-                Professional cleaning for business attire, formal garments, and everyday clothing with consistent turnaround and dependable quality.
-              </p>
-
-              <div className="mt-10 grid grid-cols-2 gap-6 text-white/70 text-sm">
-                <div>• Business & Professional Wear</div>
-                <div>• Formal & Specialty Garments</div>
-                <div>• Careful Fabric Handling</div>
-                <div>• Reliable Turnaround</div>
-              </div>
-
-              <div className="mt-10">
-                <a href="tel:6154625145">
-                  <Button>Call Now</Button>
-                </a>
-              </div>
-            </div>
-
-            {/* Right Image */}
-            <div className="relative h-[360px] md:h-[420px] overflow-hidden rounded-2xl shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
-              <div className="absolute inset-0 bg-[#1a1d20] flex items-center justify-center text-white/40">
-                Pressed Shirts Image Placeholder
-              </div>
-            </div>
-
+          <div className="text-xs tracking-[0.35em] uppercase text-[#d4af37] font-semibold mb-6">
+            Professional Garment Care
           </div>
+
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight text-white">
+            Dry Cleaning & Garment Care in Smyrna, TN
+          </h1>
+
+          <div className="mt-6 mx-auto h-[2px] w-28 bg-[#d4af37]"></div>
+
+          <p className="mt-8 text-white/80 text-lg max-w-2xl mx-auto leading-relaxed">
+            Reliable dry cleaning for business attire, suit cleaning, formal garments, dress shirts, and everyday clothing — handled with professional care, fabric-specific attention, and consistent turnaround times for customers in Smyrna and surrounding Tennessee communities.
+          </p>
+
+          <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="tel:+16154625145">
+              <Button>Call Now</Button>
+            </a>
+          </div>
+
         </div>
       </section>
+      </SectionReveal>
 
       {/* WHAT WE CLEAN */}
-      <section className="mt-32">
+      <SectionReveal>
+      <section className="mt-32 relative">
+        <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             What We Clean
@@ -120,9 +106,12 @@ export default function DryCleaningPage() {
           </div>
         </div>
       </section>
+      </SectionReveal>
 
       {/* HOW IT WORKS */}
-      <section className="mt-32">
+      <SectionReveal>
+      <section className="mt-32 relative">
+        <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Our Process
@@ -150,9 +139,12 @@ export default function DryCleaningPage() {
           </div>
         </div>
       </section>
+      </SectionReveal>
 
       {/* PRICING */}
-      <section className="mt-32">
+      <SectionReveal>
+      <section className="mt-32 relative">
+        <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Pricing Overview
@@ -176,9 +168,9 @@ export default function DryCleaningPage() {
               ["Suits (2–3 Piece)", "$17.90+"],
               ["Coats & Specialty Items", "Varies"],
             ].map(([item, price]) => (
-              <div key={item} className="flex justify-between border-b border-white/10 pb-3">
+              <div key={item} className="relative flex justify-between items-center px-6 py-5 rounded-xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/50 shadow-[0_20px_60px_rgba(0,0,0,0.45)] before:absolute before:-inset-[1px] before:rounded-xl before:bg-[linear-gradient(120deg,rgba(212,175,55,0.15),transparent_40%)] before:opacity-60 before:pointer-events-none">
                 <span>{item}</span>
-                <span className="text-white font-medium">{price}</span>
+                <span className="text-[#d4af37] font-semibold text-lg tracking-wide">{price}</span>
               </div>
             ))}
           </div>
@@ -188,9 +180,12 @@ export default function DryCleaningPage() {
           </p>
         </div>
       </section>
+      </SectionReveal>
 
       {/* LOCAL SEO */}
-      <section className="mt-32">
+      <SectionReveal>
+      <section className="mt-32 relative">
+        <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Local Dry Cleaning
@@ -207,16 +202,45 @@ export default function DryCleaningPage() {
               Searching for dry cleaning near me in Smyrna, TN? Vila Cleaners & Alterations provides reliable garment care for residents throughout Smyrna and nearby communities including Murfreesboro and La Vergne.
             </p>
             <p>
-              From business shirt cleaning and suit dry cleaning to formal wear and specialty garment care, our shop delivers consistent quality and professional handling of your clothing.
+              From business shirt cleaning and suit dry cleaning to formal wear and specialty garment care, our shop delivers consistent quality and professional handling of your clothing. If you also need tailoring services, visit our <a href="/alterations" className="text-[#d4af37] underline underline-offset-4">alterations page</a> for wedding dress alterations, suit adjustments, and custom garment fittings in Smyrna, TN.
             </p>
           </div>
         </div>
       </section>
+      </SectionReveal>
+
+      {/* WORK IN ACTION */}
+      <SectionReveal>
+      <section className="mt-32 relative">
+        <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
+        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+            Work In Action
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            Professional Cleaning Equipment & Care
+          </h2>
+
+          <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+          <div className="mt-14 grid md:grid-cols-2 gap-10">
+            <div className="h-[320px] rounded-2xl bg-[#1a1d20] flex items-center justify-center text-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+              Pressing Equipment Image Placeholder
+            </div>
+            <div className="h-[320px] rounded-2xl bg-[#1a1d20] flex items-center justify-center text-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+              Garment Inspection Image Placeholder
+            </div>
+          </div>
+        </div>
+      </section>
+      </SectionReveal>
 
       {/* CTA */}
-      <section className="mt-32 mb-32">
+      <SectionReveal>
+      <section className="pt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
-          <div className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="rounded-2xl border border-[#1f5f4d]/50 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] shadow-[0_35px_100px_rgba(0,0,0,0.55)] p-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold text-white">
                 Reliable Dry Cleaning When You Need It
@@ -225,12 +249,13 @@ export default function DryCleaningPage() {
                 Call or visit our Smyrna location for dependable garment care.
               </p>
             </div>
-            <a href="tel:6154625145">
+            <a href="tel:+16154625145">
               <Button>Call Now</Button>
             </a>
           </div>
         </div>
       </section>
+      </SectionReveal>
 
     </main>
   );

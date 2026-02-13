@@ -41,6 +41,11 @@ export default function SiteFooter() {
                   Dry Cleaning
                 </a>
               </li>
+              <li>
+                <a href="/policies" className="hover:text-[#d4af37] transition-colors">
+                  Service Policies
+                </a>
+              </li>
             </ul>
           </div>
 

@@ -47,7 +47,11 @@ export default function HomePage() {
                     <a href="tel:6154625145">
                       <Button variant="secondary">Call Now</Button>
                     </a>
-                    <a href="#visit">
+                    <a
+                      href="https://www.google.com/maps/dir/?api=1&destination=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Button variant="primary">Visit Our Location</Button>
                     </a>
                   </div>
@@ -302,7 +306,9 @@ export default function HomePage() {
                 </p>
 
                 <div className="mt-10">
-                  <Button variant="secondary">Learn More About Us</Button>
+                  <Link href="/about">
+                    <Button variant="secondary">Learn More About Us</Button>
+                  </Link>
                 </div>
               </div>
 

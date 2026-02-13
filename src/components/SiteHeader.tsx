@@ -54,6 +54,26 @@ export default function SiteHeader() {
             About Us
           </Link>
           <Link
+            href="/gallery"
+            className={
+              pathname === "/gallery"
+                ? "text-[#d4af37] font-semibold"
+                : "text-[#d4af37]/80 transition-colors duration-200 hover:text-[#d4af37]"
+            }
+          >
+            Gallery
+          </Link>
+          <Link
+            href="/policies"
+            className={
+              pathname === "/policies"
+                ? "text-[#d4af37] font-semibold"
+                : "text-[#d4af37]/80 transition-colors duration-200 hover:text-[#d4af37]"
+            }
+          >
+            Policies
+          </Link>
+          <Link
             href="/contact"
             className={
               pathname === "/contact"
@@ -93,6 +113,8 @@ export default function SiteHeader() {
             <Link onClick={() => setOpen(false)} href="/alterations">Alterations</Link>
             <Link onClick={() => setOpen(false)} href="/dry-cleaning">Dry Cleaning</Link>
             <Link onClick={() => setOpen(false)} href="/about">About Us</Link>
+            <Link onClick={() => setOpen(false)} href="/gallery">Gallery</Link>
+            <Link onClick={() => setOpen(false)} href="/policies">Policies</Link>
             <Link onClick={() => setOpen(false)} href="/contact">Contact</Link>
             <a
               href="tel:+16154625145"
