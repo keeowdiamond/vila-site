@@ -1,6 +1,37 @@
 import Button from "../../components/Button";
 import SectionReveal from "../../components/SectionReveal";
 
+const dryCleaningFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Do you offer same-day dry cleaning in Smyrna, TN?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Same-day dry cleaning may be available depending on garment type and current workload. Please contact our store directly to confirm availability.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you clean wedding dresses and formal garments?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We provide professional cleaning services for wedding dresses, formal wear, suits, and specialty garments with careful fabric handling.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does dry cleaning typically take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Standard turnaround times vary depending on garment type and volume. Please contact us for accurate timing information.",
+      },
+    },
+  ],
+};
+
 export const metadata = {
   title: "Dry Cleaning in Smyrna TN | Professional Garment Care | Vila Cleaners",
   description:
@@ -209,6 +240,56 @@ export default function DryCleaningPage() {
       </section>
       </SectionReveal>
 
+      {/* FAQ */}
+      <SectionReveal>
+      <section className="mt-32 relative">
+        <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+            Dry Cleaning FAQ
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            Common Questions About Our Dry Cleaning Services
+          </h2>
+
+          <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+          <div className="mt-12 space-y-6">
+
+            {[
+              {
+                q: "Do you offer same-day dry cleaning in Smyrna, TN?",
+                a: "Same-day service may be available depending on garment type and current workload. Please call our store directly to confirm availability.",
+              },
+              {
+                q: "Do you clean wedding dresses and formal garments?",
+                a: "Yes. We professionally clean wedding dresses, formal wear, suits, and specialty garments with careful fabric handling and attention to detail.",
+              },
+              {
+                q: "How long does dry cleaning typically take?",
+                a: "Turnaround times vary depending on garment type and volume. Contact us for accurate timing information for your specific items.",
+              },
+            ].map((item) => (
+              <details
+                key={item.q}
+                className="group rounded-xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
+              >
+                <summary className="cursor-pointer text-white font-semibold text-lg list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#d4af37] transition-transform group-open:rotate-180">⌄</span>
+                </summary>
+                <p className="mt-4 text-white/70 leading-relaxed">
+                  {item.a}
+                </p>
+              </details>
+            ))}
+
+          </div>
+        </div>
+      </section>
+      </SectionReveal>
+
       {/* WORK IN ACTION */}
       <SectionReveal>
       <section className="mt-32 relative">
@@ -257,6 +338,10 @@ export default function DryCleaningPage() {
       </section>
       </SectionReveal>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(dryCleaningFaqSchema) }}
+      />
     </main>
   );
 }

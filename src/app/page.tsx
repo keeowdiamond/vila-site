@@ -44,15 +44,15 @@ export default function HomePage() {
                   <div className="mt-6 h-[2px] w-20 bg-[#d4af37]"></div>
 
                   <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                    <a href="tel:6154625145">
-                      <Button variant="secondary">Call Now</Button>
+                    <a href="tel:+16154625145">
+                      <Button variant="primary">Call Now</Button>
                     </a>
                     <a
                       href="https://www.google.com/maps/dir/?api=1&destination=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button variant="primary">Visit Our Location</Button>
+                      <Button variant="secondary">Visit Our Location</Button>
                     </a>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export default function HomePage() {
 
         {/* HOW IT WORKS */}
         <SectionReveal>
-          <section className="mt-32 py-20">
+          <section className="mt-32 py-24">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
               What to Expect
             </h2>
@@ -114,7 +114,7 @@ export default function HomePage() {
 
         {/* GOOGLE REVIEWS */}
         <SectionReveal>
-          <section className="mt-32 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-20 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
+          <section className="mt-32 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
               What Our Customers Say
             </h2>
@@ -406,7 +406,7 @@ export default function HomePage() {
 
         {/* CRAFT IN ACTION */}
         <SectionReveal>
-          <section className="mt-32 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-24 px-8 md:px-20 shadow-[0_50px_140px_rgba(0,0,0,0.45)]">
+          <section className="mt-32 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-24 px-8 md:px-20 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
 
             {/* Subtle gold accent bar */}
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
@@ -423,7 +423,7 @@ export default function HomePage() {
                   Precision Tailoring, Executed By Hand
                 </h2>
 
-                <div className="mt-6 h-[2px] w-28 bg-[#d4af37]"></div>
+                <div className="mt-6 h-[2px] w-24 bg-[#d4af37]"></div>
 
                 <p className="mt-8 text-white/85 leading-relaxed text-lg">
                   Every alteration is completed with deliberate attention to detail. 
@@ -441,7 +441,7 @@ export default function HomePage() {
               {/* IMAGE SIDE WITH DEPTH */}
               <div className="relative">
                 <div className="absolute -bottom-6 -right-6 w-full h-full border border-[#d4af37]/30 rounded-3xl"></div>
-                <div className="relative h-80 md:h-[420px] overflow-hidden rounded-3xl shadow-[0_40px_100px_rgba(0,0,0,0.55)]">
+                <div className="relative h-80 md:h-[420px] overflow-hidden rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
                   <img
                     src="/images/craft/sewing-action.jpg"
                     alt="Master tailor working at sewing machine"
@@ -468,7 +468,7 @@ export default function HomePage() {
                 Important Pricing & Service Notes
               </h2>
 
-              <div className="mt-8 h-[2px] w-28 bg-[#d4af37]"></div>
+              <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
               <div className="mt-16 grid gap-8 md:grid-cols-3">
 
