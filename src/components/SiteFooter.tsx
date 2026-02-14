@@ -67,7 +67,7 @@ export default function SiteFooter() {
           <div>
             <h4 className="text-[#d4af37] font-semibold mb-5">Business Hours</h4>
             <ul className="space-y-3 text-sm text-white/70">
-              <li>Mon–Fri: 8:30am – 6:00pm</li>
+              <li>Mon–Fri: 8:00am – 6:00pm</li>
               <li>Saturday: 9:00am – 5:00pm</li>
               <li>Sunday: Closed</li>
             </ul>

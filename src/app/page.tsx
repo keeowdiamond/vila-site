@@ -544,7 +544,7 @@ export default function HomePage() {
               <div className="space-y-4 text-white/70">
                 <p><strong>Address:</strong><br />901 Rock Springs Rd #130, Smyrna, TN 37167</p>
                 <p><strong>Phone:</strong><br />(615) 462-5145</p>
-                <p><strong>Hours:</strong><br />Mon–Fri: 8:30am – 6:00pm<br />Sat: 9:00am – 5:00pm<br />Sun: Closed</p>
+                <p><strong>Hours:</strong><br />Mon–Fri: 8:00am – 6:00pm<br />Sat: 9:00am – 5:00pm<br />Sun: Closed</p>
               </div>
 
               <div>

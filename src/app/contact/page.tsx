@@ -69,7 +69,7 @@ export default function ContactPage() {
                   Business Hours
                 </div>
                 <p className="mt-4 text-white/80 leading-relaxed">
-                  Mon–Fri: 8:30am – 6:00pm<br />
+                  Mon–Fri: 8:00am – 6:00pm<br />
                   Sat: 9:00am – 5:00pm<br />
                   Sun: Closed
                 </p>
