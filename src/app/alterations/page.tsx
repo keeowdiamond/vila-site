@@ -67,7 +67,7 @@ export default function AlterationsPage() {
         {/* Bottom Fade */}
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#111315]"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-32">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-32">
 
           {/* Editorial Text Block */}
           <div className="max-w-3xl">
@@ -101,7 +101,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* SERVICES */}
-      <section className="mt-32">
+      <section className="mt-20 md:mt-32">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Our Services
@@ -124,7 +124,7 @@ export default function AlterationsPage() {
             ].map((service) => (
               <div
                 key={service}
-                className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
+                className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-6 md:p-8"
               >
                 <h3 className="text-white font-semibold text-lg">
                   {service}
@@ -141,7 +141,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* BRIDAL ALTERATIONS SECTION */}
-      <section className="mt-32">
+      <section className="mt-20 md:mt-32">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center">
 
           <div>
@@ -180,7 +180,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* PRICING */}
-      <section className="mt-32">
+      <section className="mt-20 md:mt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Pricing Overview
@@ -192,7 +192,7 @@ export default function AlterationsPage() {
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-          <div className="mt-14 overflow-hidden rounded-2xl border border-[#1f5f4d]/40 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19] shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
+          <div className="mt-10 md:mt-14 overflow-hidden rounded-2xl border border-[#1f5f4d]/40 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19] shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
             <div className="grid grid-cols-2 bg-[#0c241e] text-[#d4af37] font-semibold text-sm uppercase tracking-wide">
               <div className="px-6 py-4 border-b border-[#1f5f4d]/40">Service</div>
               <div className="px-6 py-4 border-b border-[#1f5f4d]/40 text-right">Starting Price</div>
@@ -229,7 +229,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* LOCAL ALTERATIONS SEO SECTION */}
-      <section className="mt-32">
+      <section className="mt-20 md:mt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Local Alterations Experts
@@ -260,7 +260,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* ALTERATIONS FAQ SECTION */}
-      <section className="mt-32">
+      <section className="mt-20 md:mt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Alterations FAQ
@@ -330,9 +330,9 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* CTA */}
-      <section className="mt-32 mb-32">
+      <section className="mt-20 md:mt-32 mb-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
-          <div className="rounded-2xl border border-[#1f5f4d]/60 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] shadow-[0_30px_90px_rgba(0,0,0,0.55)] p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="rounded-2xl border border-[#1f5f4d]/60 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] shadow-[0_30px_90px_rgba(0,0,0,0.55)] p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold text-white">
                 Ready for a Perfect Fit?

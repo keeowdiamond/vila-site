@@ -12,7 +12,7 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19]"></div>
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#061410]"></div>
 
-          <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-24 text-center">
+          <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-16 md:py-24 text-center">
             <div className="text-xs tracking-[0.3em] uppercase text-[#d4af37] font-semibold mb-6">
               Contact Vila Cleaners & Alterations
             </div>
@@ -30,14 +30,14 @@ export default function ContactPage() {
 
       {/* CONTACT INFO + MAP */}
       <SectionReveal>
-        <section className="mt-32">
+        <section className="mt-20 md:mt-32">
           <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid gap-12 md:grid-cols-2">
 
             {/* LEFT INFO */}
             <div className="space-y-10">
 
               {/* Address */}
-              <div className="rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+              <div className="rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
                 <div className="text-sm uppercase tracking-wide text-[#d4af37] font-semibold">
                   Location
                 </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
               </div>
 
               {/* Phone */}
-              <div className="relative rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#d4af37]/30 p-8 shadow-[0_25px_80px_rgba(0,0,0,0.55)] before:absolute before:-inset-[1px] before:rounded-2xl before:bg-[linear-gradient(120deg,rgba(212,175,55,0.12),transparent_40%)] before:pointer-events-none">
+              <div className="relative rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#d4af37]/30 p-6 md:p-8 shadow-[0_25px_80px_rgba(0,0,0,0.55)] before:absolute before:-inset-[1px] before:rounded-2xl before:bg-[linear-gradient(120deg,rgba(212,175,55,0.12),transparent_40%)] before:pointer-events-none">
                 <div className="text-sm uppercase tracking-wide text-[#d4af37] font-semibold">
                   Phone
                 </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
               </div>
 
               {/* Hours */}
-              <div className="rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+              <div className="rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
                 <div className="text-sm uppercase tracking-wide text-[#d4af37] font-semibold">
                   Business Hours
                 </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 <iframe
                   title="Vila Cleaners & Alterations Map"
                   src="https://www.google.com/maps?q=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167&output=embed"
-                  className="w-full h-96 border-0"
+                  className="w-full h-72 md:h-96 border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
@@ -105,9 +105,9 @@ export default function ContactPage() {
 
       {/* SIMPLE CONTACT FORM */}
       <SectionReveal>
-        <section className="mt-32 mb-32">
+        <section className="mt-20 md:mt-32 mb-20 md:mb-32">
           <div className="max-w-4xl mx-auto px-6 md:px-10 lg:px-16">
-            <div className="rounded-3xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-10 shadow-[0_30px_90px_rgba(0,0,0,0.5)]">
+            <div className="rounded-3xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-6 md:p-10 shadow-[0_30px_90px_rgba(0,0,0,0.5)]">
               <h2 className="text-2xl md:text-3xl font-semibold text-white">
                 Send Us a Message
               </h2>

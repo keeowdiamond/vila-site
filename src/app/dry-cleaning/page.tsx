@@ -72,7 +72,7 @@ export default function DryCleaningPage() {
         {/* Bottom Fade Into Page */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#061410]"></div>
 
-        <div className="relative max-w-5xl mx-auto px-6 md:px-10 lg:px-16 py-28 text-center">
+        <div className="relative max-w-5xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-28 text-center">
 
           <div className="text-xs tracking-[0.35em] uppercase text-[#d4af37] font-semibold mb-6">
             Professional Garment Care
@@ -100,7 +100,7 @@ export default function DryCleaningPage() {
 
       {/* WHAT WE CLEAN */}
       <SectionReveal>
-      <section className="mt-32 relative">
+      <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
@@ -124,7 +124,7 @@ export default function DryCleaningPage() {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
+                className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-6 md:p-8"
               >
                 <h3 className="text-white font-semibold text-lg">
                   {item}
@@ -141,7 +141,7 @@ export default function DryCleaningPage() {
 
       {/* HOW IT WORKS */}
       <SectionReveal>
-      <section className="mt-32 relative">
+      <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
@@ -174,7 +174,7 @@ export default function DryCleaningPage() {
 
       {/* PRICING */}
       <SectionReveal>
-      <section className="mt-32 relative">
+      <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
@@ -187,7 +187,7 @@ export default function DryCleaningPage() {
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 text-white/70">
+          <div className="mt-10 md:mt-14 grid gap-6 md:grid-cols-2 text-white/70">
             {[
               ["Dress Shirts", "$6.89+"],
               ["Blouses", "$7.65+"],
@@ -215,7 +215,7 @@ export default function DryCleaningPage() {
 
       {/* LOCAL SEO */}
       <SectionReveal>
-      <section className="mt-32 relative">
+      <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
@@ -242,7 +242,7 @@ export default function DryCleaningPage() {
 
       {/* FAQ */}
       <SectionReveal>
-      <section className="mt-32 relative">
+      <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
@@ -292,7 +292,7 @@ export default function DryCleaningPage() {
 
       {/* WORK IN ACTION */}
       <SectionReveal>
-      <section className="mt-32 relative">
+      <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
@@ -344,9 +344,9 @@ export default function DryCleaningPage() {
 
       {/* CTA */}
       <SectionReveal>
-      <section className="pt-32">
+      <section className="pt-20 md:pt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
-          <div className="rounded-2xl border border-[#1f5f4d]/50 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] shadow-[0_35px_100px_rgba(0,0,0,0.55)] p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="rounded-2xl border border-[#1f5f4d]/50 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] shadow-[0_35px_100px_rgba(0,0,0,0.55)] p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold text-white">
                 Reliable Dry Cleaning When You Need It

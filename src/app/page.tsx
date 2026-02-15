@@ -9,10 +9,10 @@ import { useState } from "react";
 
 export default function HomePage() {
   return (
-    <main className="px-6 md:px-10">
+    <main className="px-4 md:px-10 overflow-x-hidden">
         {/* HERO SECTION */}
         <SectionReveal>
-          <section className="relative -mx-6 md:-mx-10 overflow-hidden">
+          <section className="relative -mx-4 md:-mx-10 overflow-hidden">
 
             {/* Emerald Gradient Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19]"></div>
@@ -23,19 +23,19 @@ export default function HomePage() {
             {/* Gold Accent Curve Layer */}
 
 
-            <div className="relative px-6 md:px-12 py-28">
+            <div className="relative px-4 sm:px-6 md:px-12 py-6 sm:py-16 md:py-28">
               <div className="grid gap-16 md:grid-cols-2 items-center">
 
                 {/* LEFT CONTENT PANEL */}
-                <div className="p-10 md:p-14 bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+                <div className="p-4 sm:p-8 md:p-14 bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                   <div className="text-sm tracking-[0.2em] uppercase text-[#d4af37] font-semibold mb-4">
                     Master Tailor
                   </div>
-                  <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] tracking-[-0.02em] text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.45)]">
+                  <h1 className="text-xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-[-0.02em] text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.45)]">
                     Expert Alterations & Tailoring in Smyrna, TN
                   </h1>
 
-                  <p className="mt-6 text-lg text-white/90 max-w-xl">
+                  <p className="mt-5 text-base sm:text-lg text-white/90 max-w-xl">
                     Specializing in wedding dress alterations, suit tailoring,
                     hemming, garment resizing, and professional dry cleaning services.
                   </p>
@@ -59,7 +59,7 @@ export default function HomePage() {
 
                 {/* RIGHT IMAGE WITH DEPTH */}
                 <div className="relative">
-                <div className="relative h-[420px] overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+                <div className="relative h-56 sm:h-80 md:h-[420px] overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                     <img
                       src="/images/hero/hero-tailoring.jpg"
                       alt="Professional tailoring in progress"
@@ -76,8 +76,8 @@ export default function HomePage() {
 
         {/* HOW IT WORKS */}
         <SectionReveal>
-          <section className="mt-24 py-20">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+          <section className="mt-10 sm:mt-20 md:mt-24 py-8 sm:py-16 md:py-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
               What to Expect
             </h2>
 
@@ -85,7 +85,7 @@ export default function HomePage() {
               Our process is simple, personal, and focused on quality workmanship.
             </p>
 
-            <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+            <div className="mt-14 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
               {[ 
                 {
                   step: "Bring in Your Garment",
@@ -102,7 +102,7 @@ export default function HomePage() {
               ].map((item) => (
                 <div
                   key={item.step}
-                  className="p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
+                  className="p-5 sm:p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
                 >
                   <div className="text-sm font-semibold text-white/50">Step</div>
                   <h3 className="mt-2 text-lg font-semibold text-white">{item.step}</h3>
@@ -115,8 +115,8 @@ export default function HomePage() {
 
         {/* GOOGLE REVIEWS */}
         <SectionReveal>
-          <section className="mt-28 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
-            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+          <section className="mt-14 sm:mt-18 md:mt-28 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-10 sm:py-16 md:py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight">
               What Our Customers Say
             </h2>
 
@@ -146,7 +146,7 @@ export default function HomePage() {
                 ].map((review, idx) => (
                   <div
                     key={idx}
-                    className="p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
+                    className="p-6 sm:p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
                   >
                     <h3 className="text-sm font-semibold text-white">
                       {review.title}
@@ -173,7 +173,7 @@ export default function HomePage() {
 
         {/* AUTHORITY SECTION */}
         <SectionReveal>
-          <section className="mt-36 py-28">
+          <section className="mt-10 sm:mt-20 md:mt-36 py-8 sm:py-16 md:py-28">
             <div className="grid gap-16 md:grid-cols-2 items-start">
 
               <div>
@@ -181,7 +181,7 @@ export default function HomePage() {
                   Established Craftsmanship
                 </div>
 
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-[1.15] text-white">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.15] text-white">
                   Over 30 Years of Professional Tailoring Experience
                 </h2>
 
@@ -218,7 +218,7 @@ export default function HomePage() {
                   Credentials
                 </div>
 
-                <h3 className="text-3xl md:text-4xl font-bold tracking-tight leading-[1.2] text-white">
+                <h3 className="text-xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-[1.2] text-white">
                   Established Experience & Professional Craftsmanship
                 </h3>
 
@@ -240,11 +240,11 @@ export default function HomePage() {
 
         {/* ALTERATIONS SERVICES */}
         <SectionReveal>
-          <section className="mt-28 py-24">
+          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Specialized Services
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
               Alterations Services
             </h2>
 
@@ -264,7 +264,7 @@ export default function HomePage() {
               ].map((service) => (
                 <div
                   key={service.name}
-                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-8 overflow-hidden transition-all duration-500"
+                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-6 sm:p-8 overflow-hidden transition-all duration-500"
                 >
                   <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.14),transparent_40%),linear-gradient(120deg,rgba(255,255,255,0.08)_0%,transparent_30%),linear-gradient(to_bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.15))] opacity-50 group-hover:opacity-60 transition-opacity duration-500"></div>
                   <h3 className="font-semibold text-lg text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
@@ -282,7 +282,7 @@ export default function HomePage() {
 
         {/* ABOUT US BRIDGE */}
         <SectionReveal>
-          <section className="mt-36 relative">
+          <section className="mt-12 sm:mt-20 md:mt-36 relative">
 
             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#d4af37] via-transparent to-transparent"></div>
 
@@ -293,7 +293,7 @@ export default function HomePage() {
                   Family-Owned Since 30+ Years
                 </div>
 
-                <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] tracking-tight text-white">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-[1.15] tracking-tight text-white">
                   A Family-Owned Business Built on Trust & Craftsmanship
                 </h2>
 
@@ -332,21 +332,21 @@ export default function HomePage() {
 
         {/* DRY CLEANING PREVIEW */}
         <SectionReveal>
-          <section className="mt-28 py-24">
+          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Professional Garment Care
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight text-white">Professional Dry Cleaning Services</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight text-white">Professional Dry Cleaning Services</h2>
 
             <p className="mt-4 text-white/80 max-w-3xl leading-relaxed">
               Our professional dry cleaning services in Smyrna, TN are designed to preserve fabric quality, restore structure, and extend the life of your garments. From everyday business wear to specialty pieces, each item is handled with precision care.
             </p>
 
-            <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+            <div className="mt-14 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
               {["Suits & Blazers", "Dresses", "Coats & Jackets", "Specialty Items"].map((item) => (
                 <div
                   key={item}
-                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-8 overflow-hidden transition-all duration-500"
+                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-6 sm:p-8 overflow-hidden transition-all duration-500"
                 >
                   <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.14),transparent_40%),linear-gradient(120deg,rgba(255,255,255,0.08)_0%,transparent_30%),linear-gradient(to_bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.15))] opacity-50 group-hover:opacity-60 transition-opacity duration-500"></div>
                   <div className="font-semibold text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">{item}</div>
@@ -361,7 +361,7 @@ export default function HomePage() {
 
         {/* CRAFT IN ACTION */}
         <SectionReveal>
-          <section className="mt-40 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-28 px-8 md:px-20 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
+          <section className="mt-14 sm:mt-32 md:mt-40 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-16 md:py-28 px-6 md:px-20 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
 
             {/* Subtle gold accent bar */}
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
@@ -374,7 +374,7 @@ export default function HomePage() {
                   Craft In Action
                 </div>
 
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] text-white">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] text-white">
                   Precision Tailoring, Executed By Hand
                 </h2>
 
@@ -411,7 +411,7 @@ export default function HomePage() {
 
         {/* IMPORTANT PRICING NOTES */}
         <SectionReveal>
-          <section className="mt-28 py-24 relative">
+          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24 relative">
 
             <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
 
@@ -419,13 +419,13 @@ export default function HomePage() {
                 Service Information
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
                 Important Pricing & Service Notes
               </h2>
 
               <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-              <div className="mt-16 grid gap-8 md:grid-cols-3">
+              <div className="mt-12 grid gap-8 md:grid-cols-3">
 
                 <div className="border-t border-[#d4af37]/40 pt-6">
                   <h3 className="text-white font-semibold">Pricing Varies</h3>
@@ -460,12 +460,12 @@ export default function HomePage() {
 
         {/* FAQ SECTION */}
         <SectionReveal>
-          <section className="mt-24 py-20">
+          <section className="mt-10 sm:mt-20 md:mt-24 py-8 sm:py-16 md:py-20">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Frequently Asked Questions
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
               Common Questions About Alterations & Dry Cleaning
             </h2>
 
@@ -516,7 +516,7 @@ export default function HomePage() {
 
                         <div
                           className={`px-6 transition-all duration-500 ease-in-out overflow-hidden ${
-                            isOpen ? "max-h-40 pb-6 opacity-100" : "max-h-0 opacity-0"
+                            isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
                           }`}
                         >
                           <p className="text-white/70 leading-relaxed">
@@ -534,11 +534,11 @@ export default function HomePage() {
 
         {/* LOCATION & HOURS */}
         <SectionReveal>
-          <section className="mt-28 py-24">
+          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Location & Hours
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">Visit Vila Cleaners & Alterations</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">Visit Vila Cleaners & Alterations</h2>
 
             <div className="mt-10 grid gap-10 md:grid-cols-2 items-start">
               <div className="space-y-4 text-white/70">
@@ -574,13 +574,13 @@ export default function HomePage() {
 
         {/* FINAL CTA */}
         <SectionReveal>
-          <section className="mt-32 mb-20 mx-6 md:mx-10 overflow-hidden rounded-[40px] bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.45)] relative">
+          <section className="mt-12 sm:mt-20 md:mt-32 mb-16 sm:mb-20 mx-4 sm:mx-6 md:mx-10 overflow-hidden rounded-[40px] bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-10 sm:py-16 md:py-24 px-6 sm:px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.45)] relative">
 
             {/* Subtle gold accent line */}
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
 
             <div className="text-center max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight">
                 Ready for Expert Alterations or Dry Cleaning?
               </h2>
 

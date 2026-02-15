@@ -13,7 +13,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19]"></div>
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#061410]"></div>
 
-          <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-28 text-center">
+          <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-28 text-center">
             <div className="text-xs tracking-[0.3em] uppercase text-[#d4af37] font-semibold mb-6">
               About Vila Cleaners & Alterations
             </div>
@@ -29,7 +29,7 @@ export default function AboutPage() {
               For over three decades, Keeow Phonxaya has dedicated her life to the craft of tailoring — serving the Smyrna community with precision, integrity, and personal care. Every garment is treated not just as clothing, but as something meaningful to the person who wears it.
             </p>
 
-            <div className="mt-14 relative h-[500px] w-full rounded-3xl overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
+            <div className="mt-10 relative h-[360px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
               <Image
                 src="/images/about/about-hero.jpg"
                 alt="Keeow Phonxaya with clients"
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
       {/* STORY */}
       <SectionReveal>
-        <section className="mt-32">
+        <section className="mt-20 md:mt-32">
           <div className="max-w-4xl mx-auto px-6 md:px-10 lg:px-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
               Our Story
@@ -87,7 +87,7 @@ export default function AboutPage() {
               <p>
                 Today, every garment entrusted to Vila is handled personally with care and attention to detail. Craftsmanship comes first, and every customer is treated with respect.
               </p>
-              <div className="mt-12 rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+              <div className="mt-10 rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
                 <p className="text-[#d4af37] text-lg font-medium italic leading-relaxed">
                   “Tailoring is not just about fitting fabric — it’s about fitting people. When someone trusts me with their garment, I treat it with the same care I would my own.”
                 </p>
@@ -100,7 +100,7 @@ export default function AboutPage() {
 
       {/* VALUES / AUTHORITY */}
       <SectionReveal>
-        <section className="mt-32">
+        <section className="mt-20 md:mt-32">
           <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
               Experience & Values
@@ -132,9 +132,9 @@ export default function AboutPage() {
 
       {/* IMAGE STRIP */}
       <SectionReveal>
-        <section className="mt-32">
+        <section className="mt-20 md:mt-32">
           <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-5 md:grid-cols-3">
               <div className="relative h-72 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
                 <Image
                   src="/images/about/about-client-1.jpg"
@@ -168,9 +168,9 @@ export default function AboutPage() {
 
       {/* CTA */}
       <SectionReveal>
-        <section className="mt-32 mb-32">
+        <section className="mt-20 md:mt-32 mb-20 md:mb-32">
           <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
-            <div className="rounded-3xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/50 shadow-[0_30px_90px_rgba(0,0,0,0.55)] p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="rounded-3xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/50 shadow-[0_30px_90px_rgba(0,0,0,0.55)] p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
                 <h3 className="text-xl font-semibold text-white">We Would Be Honored to Serve You</h3>
                 <p className="mt-2 text-white/70">
