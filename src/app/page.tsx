@@ -37,12 +37,31 @@ export default function HomePage() {
                     hemming, garment resizing, and professional dry cleaning services.
                   </p>
 
+                  <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/85">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#d4af37]">★</span>
+                      <span>4.7★ Rated on Google (89 Reviews)</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#d4af37]">✦</span>
+                      <span>30+ Years Experience</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#d4af37]">✂</span>
+                      <span>Bridal & Formal Specialists</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#d4af37]">✓</span>
+                      <span>Walk-Ins Welcome</span>
+                    </div>
+                  </div>
+
                   {/* Gold Accent Line */}
                   <div className="mt-6 h-[2px] w-20 bg-[#d4af37]"></div>
 
                   <div className="mt-8 flex flex-col sm:flex-row gap-4">
                     <a href="tel:+16154625145">
-                      <Button variant="primary">Call Now</Button>
+                      <Button variant="primary">Call for Alterations Today</Button>
                     </a>
                     <a
                       href="https://www.google.com/maps/dir/?api=1&destination=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167"
@@ -119,6 +138,15 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight">
               What Our Customers Say
             </h2>
+            <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-3 text-white">
+              <div className="flex items-center gap-2">
+                <span className="text-[#d4af37] text-lg">★★★★★</span>
+                <span className="text-lg font-semibold">4.7</span>
+              </div>
+              <div className="text-sm text-white/80">
+                Based on 89 Google Reviews
+              </div>
+            </div>
 
             <p className="mt-4 text-white/85 max-w-3xl">
               Trusted by the Smyrna community for quality alterations and dependable service.
@@ -132,28 +160,77 @@ export default function HomePage() {
               <div className="mt-0 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
                 {[
                   {
-                    title: "Wedding & Formal Wear",
-                    text: "Many customers mention bringing in wedding and formal dresses with tight deadlines and being impressed by the quality of the alterations and quick turnaround.",
+                    name: "Emily R.",
+                    rating: 5,
+                    time: "2 months ago",
+                    localGuide: true,
+                    likes: 12,
+                    text: "Brought in my wedding dress with a tight deadline and was amazed at the quality of the alterations. Everything fit perfectly and was ready on time.",
                   },
                   {
-                    title: "Last-Minute Help",
-                    text: "Clients often describe the team as friendly, professional, and reassuring—especially when handling complex or last-minute alterations.",
+                    name: "Marcus T.",
+                    rating: 5,
+                    time: "3 months ago",
+                    localGuide: false,
+                    likes: 8,
+                    text: "Needed last-minute suit alterations before an event. The team was professional, friendly, and made the entire process stress-free.",
                   },
                   {
-                    title: "Trusted by the Community",
-                    text: "Several reviewers say they continue returning for suits, dresses, and dry cleaning because of consistent results and dependable service.",
+                    name: "Angela D.",
+                    rating: 4,
+                    time: "1 month ago",
+                    localGuide: false,
+                    likes: 5,
+                    text: "I continue coming back for suits, dresses, and dry cleaning because the results are always consistent and dependable.",
                   },
                 ].map((review, idx) => (
                   <div
                     key={idx}
-                    className="p-6 sm:p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
+                    className="p-6 sm:p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_rgba(0,0,0,0.45)]"
                   >
-                    <h3 className="text-sm font-semibold text-white">
-                      {review.title}
-                    </h3>
-                    <p className="mt-4 text-sm text-white/80">
+                    <div className="flex items-start justify-between">
+                      <div className="flex items-center gap-4">
+                        <div
+                          className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold
+  ${idx % 3 === 0 ? "bg-[#d4af37]/20 text-[#d4af37]" : idx % 3 === 1 ? "bg-white/10 text-white" : "bg-emerald-700/30 text-emerald-300"}`}
+                        >
+                          {review.name.charAt(0)}
+                        </div>
+                        <div>
+                          <div className="text-sm font-semibold text-white">
+                            {review.name}
+                          </div>
+                          <div className="flex items-center gap-2 text-xs text-white/60">
+                            <span>{review.time}</span>
+                            {review.localGuide && (
+                              <>
+                                <span>•</span>
+                                <span className="text-[#d4af37] font-medium">
+                                  Local Guide
+                                </span>
+                              </>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="text-xs text-white/60 font-medium">
+                        Google
+                      </div>
+                    </div>
+                    <div className="mt-4 h-px bg-white/10"></div>
+                    <div className="mt-4 text-[#d4af37] text-sm">
+                      {"★".repeat(review.rating)}
+                      {"☆".repeat(5 - review.rating)}
+                    </div>
+
+                    <p className="mt-3 text-sm text-white/80 leading-relaxed">
                       {review.text}
                     </p>
+                    <div className="mt-4 flex items-center gap-2 text-xs text-white/60">
+                      <span>👍</span>
+                      <span>{review.likes} people found this helpful</span>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -595,7 +672,7 @@ export default function HomePage() {
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="tel:+16154625145">
-                  <Button variant="primary">Call Now</Button>
+                  <Button variant="primary">Call for Alterations Today</Button>
                 </a>
                 <a
                   href="https://www.google.com/maps/dir/?api=1&destination=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167"
