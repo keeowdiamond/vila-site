@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import Link from "next/link";
 import SectionReveal from "../../components/SectionReveal";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -104,6 +105,26 @@ export default function ContactPage() {
                 >
                   <Button>Get Directions</Button>
                 </a>
+              </div>
+
+              {/* STOREFRONT IMAGE BELOW MAP */}
+              <div className="md:col-span-2 mt-12">
+                <SectionReveal>
+                  <div className="max-w-3xl mx-auto">
+                    <div className="rounded-2xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+                      <Image
+                        src="/images/contact/storefront.jpg"
+                        alt="Vila Cleaners & Alterations storefront in Smyrna, TN"
+                        width={1200}
+                        height={700}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                    <p className="mt-4 text-center text-white/70 text-sm leading-relaxed">
+                      Visit our storefront in Smyrna, TN for professional alterations, expert tailoring, and dependable dry cleaning services.
+                    </p>
+                  </div>
+                </SectionReveal>
               </div>
             </div>
 

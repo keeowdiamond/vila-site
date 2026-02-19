@@ -83,6 +83,14 @@ export default function GalleryPage() {
             <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {/* SUIT DETAIL */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/suit-button-detail.jpg"
+                  alt="Close-up suit button tailoring detail at Vila Cleaners & Alterations in Smyrna TN"
+                  className="w-full h-[260px] md:h-[350px] object-cover"
+                />
+              </div>
               {/* CLIENT 1 */}
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img

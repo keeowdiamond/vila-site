@@ -25,6 +25,7 @@ export const metadata = {
 import Button from "../../components/Button";
 import Link from "next/link";
 import SectionReveal from "../../components/SectionReveal";
+import Image from "next/image";
 
 export default function AlterationsPage() {
   return (
@@ -183,6 +184,50 @@ export default function AlterationsPage() {
       </SectionReveal>
 
       <SectionReveal>
+      {/* WORKSHOP SECTION */}
+      <section className="mt-20 md:mt-32">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+
+          <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+            Our Tailoring Workshop
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            Professional Alterations Backed by Real Craftsmanship
+          </h2>
+
+          <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+          <div className="mt-12 rounded-2xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.45)] relative w-full h-[280px] md:h-[520px]">
+            <Image
+              src="/images/alterations/workshop.jpg"
+              alt="Tailoring workshop with sewing machines and thread wall at Vila Cleaners in Smyrna TN"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1200px"
+              priority={false}
+            />
+          </div>
+
+          <div className="mt-10 max-w-3xl text-white/70 leading-relaxed">
+            <p>
+              Every garment alteration is completed inside our professional tailoring workshop in Smyrna, Tennessee. Equipped with industrial sewing machines, precision tools, and decades of hands-on experience, we ensure every adjustment is structured, balanced, and built to last.
+            </p>
+          </div>
+          <div className="mt-6">
+            <Link
+              href="/contact"
+              className="text-[#d4af37] underline underline-offset-4 font-medium hover:text-[#e6c35c] transition-colors"
+            >
+              Schedule your in-person fitting today.
+            </Link>
+          </div>
+
+        </div>
+      </section>
+      </SectionReveal>
+
+      <SectionReveal>
       {/* BRIDAL ALTERATIONS SECTION */}
       <section className="mt-20 md:mt-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center">
@@ -207,14 +252,43 @@ export default function AlterationsPage() {
                 We also provide prom dress alterations, bridesmaid dress adjustments, suit alterations, jacket resizing, and professional pants hemming for clients throughout Smyrna, Murfreesboro, La Vergne, and surrounding Tennessee communities. Whether you need wedding dress alterations or everyday tailoring, our local alteration shop delivers precision and reliable turnaround times.
               </p>
             </div>
+            <div className="mt-8 space-y-4 text-white/80">
+              <div className="flex items-start gap-3">
+                <span className="text-[#d4af37]">•</span>
+                <p>Over 30 years of professional tailoring experience in Smyrna, TN</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#d4af37]">•</span>
+                <p>In-person bridal fittings for structure, balance, and comfort</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-[#d4af37]">•</span>
+                <p>Clear pricing confirmation before any alteration work begins</p>
+              </div>
+            </div>
+            <div className="mt-10 rounded-xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_20px_60px_rgba(0,0,0,0.35)] relative w-full h-[220px] md:h-[320px]">
+              <Image
+                src="/images/alterations/fitting-mirror.jpg"
+                alt="In-person bridal fitting at Vila Cleaners & Alterations in Smyrna TN"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 500px"
+                priority={false}
+              />
+            </div>
           </div>
 
           <div className="relative rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)] bg-[#0c241e] p-6">
-            <img
-              src="/images/alterations/gold-formal-dress.jpg"
-              alt="Wedding dress alteration results"
-              className="w-full h-auto object-contain rounded-xl"
-            />
+            <div className="relative w-full h-[320px] md:h-[520px] rounded-xl overflow-hidden">
+              <Image
+                src="/images/alterations/gold-formal-dress.jpg"
+                alt="Wedding dress alteration results at Vila Cleaners in Smyrna TN"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 600px"
+                priority={false}
+              />
+            </div>
           </div>
 
         </div>
