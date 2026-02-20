@@ -106,7 +106,7 @@ export default function AboutPage() {
 
       <SectionReveal>
         <section className="mt-20 md:mt-32">
-          <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 lg:px-16">
 
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Our Smyrna Location
@@ -118,7 +118,7 @@ export default function AboutPage() {
 
             <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-            <div className="mt-12 relative w-full h-[300px] md:h-[480px] rounded-3xl overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.45)] border border-[#1f5f4d]/40">
+            <div className="mt-10 relative w-full h-[240px] md:h-[380px] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.45)] border border-[#1f5f4d]/40">
               <Image
                 src="/images/about/front-counter.jpg"
                 alt="Front counter and welcome area at Vila Cleaners & Alterations in Smyrna TN"

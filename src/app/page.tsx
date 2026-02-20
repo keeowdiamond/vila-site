@@ -1,10 +1,15 @@
+"use client";
+
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
 import SectionReveal from "@/components/SectionReveal";
 
+import { useState } from "react";
+
 export default function HomePage() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   return (
     <main className="px-4 md:px-10 overflow-x-hidden">
         {/* HERO SECTION */}
@@ -317,72 +322,6 @@ export default function HomePage() {
           </section>
         </SectionReveal>
 
-        {/* ALTERATIONS SERVICES */}
-        <SectionReveal>
-          <section className="mt-20 md:mt-32 py-10 sm:py-16 md:py-24">
-            <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
-              Specialized Services
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
-              Alterations Services in Smyrna, TN
-            </h2>
-
-            <p className="mt-4 text-white/70 max-w-3xl">
-              Precision tailoring to ensure the perfect fit for weddings, formal wear,
-              business attire, and everyday garments.
-            </p>
-
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-              {[
-                {
-                  name: "Wedding & Prom Dress Alterations in Smyrna",
-                  note:
-                    "Expert wedding dress and formal gown alterations in Smyrna, TN including hemming, bodice adjustments, and detailed custom fittings.",
-                },
-                {
-                  name: "Suit Tailoring in Smyrna",
-                  note:
-                    "Professional suit tailoring services in Smyrna, TN for jackets, sleeves, waist adjustments, and complete suit alterations.",
-                },
-                {
-                  name: "Pants Hemming Services in Smyrna",
-                  note:
-                    "Fast and precise pants hemming in Smyrna, TN for dress pants, jeans, uniforms, and everyday wear.",
-                },
-                {
-                  name: "Dress & Clothing Alterations in Smyrna",
-                  note:
-                    "Complete clothing alterations in Smyrna, TN including resizing, adjustments, and garment reshaping for a perfect fit.",
-                },
-                {
-                  name: "Zipper Repair in Smyrna",
-                  note:
-                    "Reliable zipper repair in Smyrna, TN for pants, jackets, coats, dresses, and specialty garments.",
-                },
-                {
-                  name: "Clothing Repair Services in Smyrna",
-                  note:
-                    "Professional clothing repair in Smyrna, TN including seam repairs, patching, and structural garment fixes.",
-                },
-              ].map((service) => (
-                <div
-                  key={service.name}
-                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-6 sm:p-8 overflow-hidden transition-all duration-500"
-                >
-                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.14),transparent_40%),linear-gradient(120deg,rgba(255,255,255,0.08)_0%,transparent_30%),linear-gradient(to_bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.15))] opacity-50 group-hover:opacity-60 transition-opacity duration-500"></div>
-                  <h3 className="font-semibold text-lg text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
-                    {service.name}
-                  </h3>
-                  <p className="mt-2 text-sm text-white/85 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">
-                    {service.note}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-        </SectionReveal>
-
-
         {/* ABOUT US BRIDGE */}
         <SectionReveal>
           <section className="mt-20 md:mt-32 relative">
@@ -430,34 +369,6 @@ export default function HomePage() {
               </div>
               </div>
 
-            </div>
-          </section>
-        </SectionReveal>
-
-
-        {/* DRY CLEANING PREVIEW */}
-        <SectionReveal>
-          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24">
-            <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
-              Professional Garment Care
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight text-white">Professional Dry Cleaning Services in Smyrna, TN</h2>
-
-            <p className="mt-4 text-white/80 max-w-3xl leading-relaxed">
-              In addition to expert clothing alterations in Smyrna, TN, we provide dependable dry cleaning services to preserve fabric quality, restore structure, and extend the life of your garments. From business wear to specialty pieces, each item is professionally cleaned with precision care.
-            </p>
-
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
-              {["Suits & Blazers", "Dresses", "Coats & Jackets", "Specialty Items"].map((item) => (
-                <div
-                  key={item}
-                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-6 sm:p-8 overflow-hidden transition-all duration-500"
-                >
-                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.14),transparent_40%),linear-gradient(120deg,rgba(255,255,255,0.08)_0%,transparent_30%),linear-gradient(to_bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.15))] opacity-50 group-hover:opacity-60 transition-opacity duration-500"></div>
-                  <div className="font-semibold text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">{item}</div>
-                  <div className="mt-2 text-sm text-white/85 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">Pricing varies</div>
-                </div>
-              ))}
             </div>
           </section>
         </SectionReveal>
@@ -516,55 +427,6 @@ export default function HomePage() {
           </section>
         </SectionReveal>
 
-        {/* IMPORTANT PRICING NOTES */}
-        <SectionReveal>
-          <section className="mt-20 md:mt-32 py-10 sm:py-16 md:py-24 relative">
-
-            <Container>
-
-              <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
-                Service Information
-              </div>
-
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
-                Important Pricing & Service Notes
-              </h2>
-
-              <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
-
-              <div className="mt-12 grid gap-8 md:grid-cols-3">
-
-                <div className="border-t border-[#d4af37]/40 pt-6">
-                  <h3 className="text-white font-semibold">Pricing Varies</h3>
-                  <p className="mt-3 text-white/70 text-sm leading-relaxed">
-                    Final pricing depends on fabric type, garment construction, and alteration complexity. All pricing is confirmed in-store after professional evaluation.
-                  </p>
-                </div>
-
-                <div className="border-t border-[#d4af37]/40 pt-6">
-                  <h3 className="text-white font-semibold">Express Service</h3>
-                  <p className="mt-3 text-white/70 text-sm leading-relaxed">
-                    Express and same-day services may be available depending on garment type and current workload. Availability and timing are confirmed in-store.
-                  </p>
-                </div>
-
-                <div className="border-t border-[#d4af37]/40 pt-6">
-                  <h3 className="text-white font-semibold">Discounts Available</h3>
-                  <p className="mt-3 text-white/70 text-sm leading-relaxed">
-                    We proudly offer military and veteran discounts. First-time customers receive 10% off their first service.
-                  </p>
-                </div>
-
-              </div>
-
-              <div className="mt-12 max-w-3xl text-white/60 text-sm leading-relaxed">
-                Wedding and formal wear typically require an in-person fitting. Payment is required in-store before alteration or cleaning work begins.
-              </div>
-
-            </Container>
-          </section>
-        </SectionReveal>
-
         {/* FAQ SECTION */}
         <SectionReveal>
           <section className="mt-20 md:mt-32 py-8 sm:py-16 md:py-20">
@@ -589,28 +451,39 @@ export default function HomePage() {
                   q: "Do you offer wedding dress alterations in Smyrna?",
                   a: "Yes. We specialize in wedding dress alterations in Smyrna, TN including hemming, bodice adjustments, sleeve modifications, and detailed custom fitting to ensure the perfect bridal fit.",
                 },
-                {
-                  q: "What items can be dry cleaned in Smyrna, TN?",
-                  a: "We provide professional dry cleaning services in Smyrna, TN for suits, dresses, coats, formal wear, and specialty garments. Bring your items to our location for garment inspection and pricing.",
-                },
-                {
-                  q: "Do you provide zipper repair and clothing repair in Smyrna?",
-                  a: "Yes. We offer zipper repair, seam repair, and professional clothing repair services in Smyrna, TN for pants, jackets, dresses, and everyday garments.",
-                },
               ].map((item, idx) => (
-                <details
+                <div
                   key={idx}
                   className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] overflow-hidden"
                 >
-                  <summary className="cursor-pointer px-6 py-5 text-lg font-semibold text-white list-none">
-                    {item.q}
-                  </summary>
-                  <div className="px-6 pb-6">
-                    <p className="text-white/70 leading-relaxed">
-                      {item.a}
-                    </p>
+                  <button
+                    onClick={() =>
+                      setActiveIndex(activeIndex === idx ? null : idx)
+                    }
+                    className="w-full text-left px-6 py-5 text-lg font-semibold text-white flex justify-between items-center"
+                  >
+                    <span>{item.q}</span>
+                    <span className="text-[#d4af37]">
+                      {activeIndex === idx ? "−" : "+"}
+                    </span>
+                  </button>
+
+                  <div
+                    className={`grid transition-all duration-500 ease-in-out ${
+                      activeIndex === idx
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="px-6 pb-6">
+                        <p className="text-white/70 leading-relaxed">
+                          {item.a}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               ))}
             </div>
           </section>

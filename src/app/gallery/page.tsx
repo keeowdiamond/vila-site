@@ -49,7 +49,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/wedding-dress-alteration-before.jpg"
                   alt="Wedding dress before alterations in Smyrna TN"
-                  className="w-full h-[320px] md:h-[500px] object-cover"
+                  className="w-full h-auto md:h-[500px] object-cover"
                 />
                 <div className="px-6 py-4 text-white/80 text-sm tracking-wide uppercase">
                   Before Alterations
@@ -61,7 +61,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/wedding-dress-alteration-after.jpg"
                   alt="Wedding dress after alterations in Smyrna TN by Vila Cleaners"
-                  className="w-full h-[320px] md:h-[500px] object-cover"
+                  className="w-full h-auto md:h-[500px] object-cover"
                 />
                 <div className="px-6 py-4 text-white/80 text-sm tracking-wide uppercase">
                   After Alterations
@@ -88,7 +88,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/suit-button-detail.jpg"
                   alt="Close-up suit button tailoring detail at Vila Cleaners & Alterations in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
               {/* CLIENT 1 */}
@@ -96,7 +96,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/nfl-event.jpg"
                   alt="Vila Cleaners master tailor with clients in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -105,7 +105,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/nfl-client.jpg"
                   alt="Client of Vila Cleaners & Alterations in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -114,7 +114,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/celebrity-client.jpg"
                   alt="Clothing alterations craftsmanship in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -123,7 +123,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/client-4.jpg"
                   alt="Tailoring and alterations clients in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -132,7 +132,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/client-5.jpg"
                   alt="Tailoring and alterations clients in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -141,7 +141,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/client-6.jpg"
                   alt="Tailoring and alterations clients in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -150,7 +150,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/client-7.jpg"
                   alt="Tailoring and alterations clients in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -159,7 +159,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/client-8.jpg"
                   alt="Tailoring and alterations clients in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
 
@@ -168,7 +168,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/client-9.jpg"
                   alt="Tailoring and alterations clients in Smyrna TN"
-                  className="w-full h-[260px] md:h-[350px] object-cover"
+                  className="w-full h-auto md:h-[350px] object-cover"
                 />
               </div>
             </div>

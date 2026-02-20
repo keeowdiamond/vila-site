@@ -115,7 +115,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* SERVICES */}
-      <section className="mt-20 md:mt-32">
+      <section className="mt-16 md:mt-28">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Our Services
@@ -185,7 +185,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* WORKSHOP SECTION */}
-      <section className="mt-20 md:mt-32">
+      <section className="mt-16 md:mt-28">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
 
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
@@ -198,7 +198,7 @@ export default function AlterationsPage() {
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-          <div className="mt-12 rounded-2xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.45)] relative w-full h-[280px] md:h-[520px]">
+          <div className="mt-10 rounded-2xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.45)] relative w-full aspect-[4/3] md:h-[520px]">
             <Image
               src="/images/alterations/workshop.jpg"
               alt="Tailoring workshop with sewing machines and thread wall at Vila Cleaners in Smyrna TN"
@@ -229,7 +229,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* BRIDAL ALTERATIONS SECTION */}
-      <section className="mt-20 md:mt-32">
+      <section className="mt-16 md:mt-28">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center">
 
           <div>
@@ -266,7 +266,7 @@ export default function AlterationsPage() {
                 <p>Clear pricing confirmation before any alteration work begins</p>
               </div>
             </div>
-            <div className="mt-10 rounded-xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_20px_60px_rgba(0,0,0,0.35)] relative w-full h-[220px] md:h-[320px]">
+            <div className="mt-8 rounded-xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_20px_60px_rgba(0,0,0,0.35)] relative w-full aspect-[4/3] md:h-[320px]">
               <Image
                 src="/images/alterations/fitting-mirror.jpg"
                 alt="In-person bridal fitting at Vila Cleaners & Alterations in Smyrna TN"
@@ -279,7 +279,7 @@ export default function AlterationsPage() {
           </div>
 
           <div className="relative rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)] bg-[#0c241e] p-6">
-            <div className="relative w-full h-[320px] md:h-[520px] rounded-xl overflow-hidden">
+          <div className="relative w-full aspect-[3/4] md:h-[520px] rounded-xl overflow-hidden">
               <Image
                 src="/images/alterations/gold-formal-dress.jpg"
                 alt="Wedding dress alteration results at Vila Cleaners in Smyrna TN"
@@ -297,7 +297,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* PRICING */}
-      <section className="mt-20 md:mt-32">
+      <section className="mt-16 md:mt-28">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Pricing Overview
@@ -346,7 +346,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* LOCAL ALTERATIONS SEO SECTION */}
-      <section className="mt-20 md:mt-32">
+      <section className="mt-16 md:mt-28">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Local Alterations Experts
@@ -377,7 +377,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* ALTERATIONS FAQ SECTION */}
-      <section className="mt-20 md:mt-32">
+      <section className="mt-16 md:mt-28">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Alterations FAQ
@@ -497,7 +497,7 @@ export default function AlterationsPage() {
 
       <SectionReveal>
       {/* CTA */}
-      <section className="mt-20 md:mt-32 mb-32">
+      <section className="mt-16 md:mt-28 mb-32">
         <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="rounded-2xl border border-[#1f5f4d]/60 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] shadow-[0_30px_90px_rgba(0,0,0,0.55)] p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
