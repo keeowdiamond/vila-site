@@ -112,6 +112,8 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <SpeedInsights />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
