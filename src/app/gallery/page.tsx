@@ -163,14 +163,7 @@ export default function GalleryPage() {
                 />
               </div>
 
-              {/* CLIENT 9 */}
-              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
-                <img
-                  src="/images/gallery/client-9.jpg"
-                  alt="Tailoring and alterations clients in Smyrna TN"
-                  className="w-full h-auto md:h-[350px] object-cover"
-                />
-              </div>
+
             </div>
           </div>
         </section>
