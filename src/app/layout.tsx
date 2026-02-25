@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vilacleanersalterations.com"),
@@ -118,6 +119,18 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-65SGHV6S3T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-65SGHV6S3T');
+          `}
+        </Script>
       </body>
     </html>
   );
