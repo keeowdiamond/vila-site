@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   },
   description:
     "Professional tailoring, clothing alterations, suit adjustments, wedding dress alterations, and dry cleaning services in Smyrna TN. Vila Cleaners & Alterations offers expert garment care with over 30 years of experience.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Alterations & Dry Cleaning in Smyrna TN | Vila Cleaners & Alterations",
     description:
